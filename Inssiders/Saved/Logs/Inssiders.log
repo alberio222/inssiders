@@ -1,360 +1,772 @@
-﻿[2016.02.26-10.18.45:712][  0]Log file open, 02/26/16 12:18:45
-[2016.02.26-10.18.45:712][  0]LogInit:Display: Running engine for game: Inssiders
-[2016.02.26-10.18.45:712][  0]LogPlatformFile: Not using cached read wrapper
-[2016.02.26-10.18.45:712][  0]LogInit:Display: RandInit(-790158412) SRandInit(-790158410).
-[2016.02.26-10.18.45:712][  0]LogTaskGraph: Started task graph with 4 named threads and 6 total threads.
-[2016.02.26-10.18.45:712][  0]LogStats: Stats thread started at 0.100709
-[2016.02.26-10.18.45:712][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.02.26-10.18.45:712][  0]LogInit: API Version: 2758231
-[2016.02.26-10.18.45:712][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
-[2016.02.26-10.18.45:712][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
-[2016.02.26-10.18.45:712][  0]LogInit: Build Configuration: Development
-[2016.02.26-10.18.45:712][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
-[2016.02.26-10.18.45:712][  0]LogInit: Command line: -EpicPortal 
-[2016.02.26-10.18.45:712][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
-[2016.02.26-10.18.45:712][  0]LogInit: Rocket: 1
-[2016.02.26-10.18.45:724][  0]LogInit: Using libcurl 7.41.0
-[2016.02.26-10.18.45:724][  0]LogInit:  - built for x86_64-pc-win32
-[2016.02.26-10.18.45:724][  0]LogInit:  - supports SSL with WinSSL
-[2016.02.26-10.18.45:724][  0]LogInit:  - other features:
-[2016.02.26-10.18.45:724][  0]LogInit:      CURL_VERSION_SSL
-[2016.02.26-10.18.45:724][  0]LogInit:      CURL_VERSION_IPV6
-[2016.02.26-10.18.45:724][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2016.02.26-10.18.45:724][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2016.02.26-10.18.45:724][  0]LogInit:      CURL_VERSION_IDN
-[2016.02.26-10.18.45:724][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2016.02.26-10.18.45:724][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2016.02.26-10.18.45:724][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2016.02.26-10.18.45:724][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2016.02.26-10.18.45:724][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2016.02.26-10.18.45:737][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2016.02.26-10.18.45:748][  0]LogInit: Object subsystem initialized
-[2016.02.26-10.18.45:754][  0]LogInit: Selected Device Profile: [Windows]
-[2016.02.26-10.18.45:754][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.02.26-10.18.45:762][  0]LogInit: Computer: DESKTOP-KG0OGIL
-[2016.02.26-10.18.45:762][  0]LogInit: User: Игорь
-[2016.02.26-10.18.45:762][  0]LogInit: CPU Page size=4096, Cores=3
-[2016.02.26-10.18.45:762][  0]LogInit: High frequency timer resolution =3.228952 MHz
-[2016.02.26-10.18.45:762][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
-[2016.02.26-10.18.45:762][  0]LogMemory: Platform Memory Stats for Windows
-[2016.02.26-10.18.45:762][  0]LogMemory: Process Physical Memory: 56.05 MB used, 56.05 MB peak
-[2016.02.26-10.18.45:762][  0]LogMemory: Process Virtual Memory: 57.82 MB used, 57.82 MB peak
-[2016.02.26-10.18.45:762][  0]LogMemory: Physical Memory: 4152.83 MB used, 8175.23 MB total
-[2016.02.26-10.18.45:762][  0]LogMemory: Virtual Memory: 372.58 MB used, 134217728.00 MB total
-[2016.02.26-10.18.45:814][  0]LogTextLocalizationManager: No translations for ('ru-RU') exist, falling back to 'en' for localization and internationalization data.
-[2016.02.26-10.18.46:571][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GT 730 (Feature Level 11_0)
-[2016.02.26-10.18.46:571][  0]LogD3D11RHI: Adapter has 1996MB of dedicated video memory, 0MB of dedicated system memory, and 2047MB of shared system memory, 2 output[s]
-[2016.02.26-10.18.46:575][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
-[2016.02.26-10.18.46:575][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 0 output[s]
-[2016.02.26-10.18.46:575][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2016.02.26-10.18.46:587][  0]LogD3D11RHI: !Direct3DDevice
-[2016.02.26-10.18.46:587][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.02.26-10.18.46:607][  0]LogD3D11RHI: Async texture creation enabled
-[2016.02.26-10.18.46:626][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (D:/Inssiders/inssiders/Inssiders/Intermediate/Shaders/WorkingDirectory/7540/).
-[2016.02.26-10.18.46:626][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/D395~1/AppData/Local/Temp/UnrealShaderWorkingDir/E26D0C4141EBB9EE0E4D9288ACF0F0B6/'.
-[2016.02.26-10.18.46:626][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.02.26-10.18.47:909][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.02.26-10.18.47:918][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.02.26-10.18.47:926][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.02.26-10.18.47:934][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.02.26-10.18.47:941][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.02.26-10.18.47:946][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.02.26-10.18.47:950][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.02.26-10.18.47:955][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.02.26-10.18.47:959][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.02.26-10.18.47:965][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.02.26-10.18.47:969][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.02.26-10.18.47:980][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.02.26-10.18.47:980][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.02.26-10.18.47:981][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.02.26-10.18.48:001][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.02.26-10.18.48:006][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.02.26-10.18.48:010][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.02.26-10.18.48:015][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.02.26-10.18.48:015][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.02.26-10.18.48:168][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.02.26-10.18.48:274][  0]LogDerivedDataCache: Loaded boot cache 0.11s 41MB C:/Users/Игорь/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.02.26-10.18.48:274][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Игорь/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
-[2016.02.26-10.18.48:274][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Inssiders/inssiders/Inssiders/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.02.26-10.18.48:274][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.02.26-10.18.48:274][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/Inssiders/inssiders/Inssiders/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.02.26-10.18.48:274][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.02.26-10.18.48:364][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.02.26-10.18.48:377][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Игорь/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.02.26-10.18.48:681][  0]LogInit: Selected Device Profile: [Windows]
-[2016.02.26-10.18.48:685][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2016.02.26-10.18.48:852][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.02.26-10.18.48:852][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.02.26-10.18.49:264][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.02.26-10.18.50:432][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.02.26-10.18.50:592][  0]LogAssetRegistry: FAssetRegistry took 0.0111 seconds to start up
-[2016.02.26-10.18.50:883][  0]SourceControl: Info Source control is disabled
-[2016.02.26-10.18.50:976][  0]SourceControl: Info Source control is disabled
-[2016.02.26-10.18.51:006][  0]SourceControl: Info Source control is disabled
-[2016.02.26-10.18.51:034][  0]SourceControl: Info Source control is disabled
-[2016.02.26-10.18.51:525][  0]LogObj: 28633 objects as part of root set at end of initial load.
-[2016.02.26-10.18.51:525][  0]LogUObjectAllocator: 6099752 out of 0 bytes used by permanent object pool.
-[2016.02.26-10.18.51:604][  0]LogEngine: Initializing Engine...
-[2016.02.26-10.18.51:610][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.02.26-10.18.51:611][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.02.26-10.18.51:786][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.02.26-10.18.51:795][  0]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.02.26-10.18.51:815][  0]LogInit: FAudioDevice initialized.
-[2016.02.26-10.18.51:869][  0]LogDerivedDataCache: Saved boot cache 0.05s 41MB C:/Users/Игорь/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
-[2016.02.26-10.18.51:885][  0]LogInit: Texture streaming: Enabled
-[2016.02.26-10.18.51:895][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2016.02.26-10.18.51:895][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
-[2016.02.26-10.18.51:895][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 619baabd4604f1d593d26e8e751894f6|075c1a30cb234253afcbb6ac30018a0b|32d9df30-af1d-4804-8f18-d55716e9c17f
-[2016.02.26-10.18.51:895][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2016.02.26-10.18.51:910][  0]LogInit: Transaction tracking system initialized
-[2016.02.26-10.18.51:958][  0]BlueprintLog: New page: Editor Load
-[2016.02.26-10.18.52:501][  0]LocalizationService: Info Localization service is disabled
-[2016.02.26-10.18.52:723][  0]LogConsoleResponse:Display: 
-[2016.02.26-10.18.52:877][  0]LogFileCache: Scanning file cache for directory 'D:/Inssiders/inssiders/Inssiders/Content/' took 0.01s
-[2016.02.26-10.18.52:877][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2016.02.26-10.18.52:998][  0]SourceControl: Info Source control is disabled
-[2016.02.26-10.18.52:998][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.02.26-10.18.52:999][  0]LightingResults: New page: Lighting Build
-[2016.02.26-10.18.53:005][  0]MapCheck: New page: Map Check
-[2016.02.26-10.18.53:006][  0]LightingResults: New page: Lighting Build
-[2016.02.26-10.18.53:026][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001BD65EB7420
-[2016.02.26-10.18.53:401][  0]LogAIModule: Creating AISystem for world Untitled_1
-[2016.02.26-10.18.53:409][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.02.26-10.18.53:417][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.02.26-10.18.53:485][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 68.16ms to complete.
-[2016.02.26-10.18.53:486][  0]LogFileHelpers: Loading map 'Template_Default' took 0.488
-[2016.02.26-10.18.53:676][  0]LogCollectionManager: Loaded 0 collections in 0.005135 seconds
-[2016.02.26-10.18.53:720][  0]LogFileCache: Scanning file cache for directory 'D:/Inssiders/inssiders/Inssiders/Saved/Collections/' took 0.01s
-[2016.02.26-10.18.53:721][  0]LogFileCache: Scanning file cache for directory 'D:/Inssiders/inssiders/Inssiders/Content/Developers/Игорь/Collections/' took 0.01s
-[2016.02.26-10.18.53:721][  0]LogFileCache: Scanning file cache for directory 'D:/Inssiders/inssiders/Inssiders/Content/Collections/' took 0.01s
-[2016.02.26-10.18.53:721][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
-[2016.02.26-10.18.53:732][  0]LogContentBrowser: Native class hierarchy populated in 0.0117 seconds. Added 1894 classes and 340 folders.
-[2016.02.26-10.18.53:743][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2016.02.26-10.18.53:821][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
-[2016.02.26-10.18.53:827][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.02.26-10.18.53:834][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.02.26-10.18.53:857][  0]LogLoad: Full Startup: 8.69 seconds (BP compile: 0.06 seconds)
-[2016.02.26-10.18.53:867][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.02.26-10.18.53:867][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.02.26-10.18.53:874][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.02.26-10.18.53:938][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.02.26-10.18.54:155][  0]LogRenderer: Reallocating scene render targets to support 708x648 (Frame:2).
-[2016.02.26-10.18.54:451][  4]LogAssetRegistry: Asset discovery search completed in 3.8707 seconds
-[2016.02.26-10.18.54:451][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.02.26-10.18.54:451][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000028 seconds (updated 0 objects)
-[2016.02.26-10.19.18:939][757]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2016.02.26-10.19.20:040][757]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0010 seconds. Added 107 classes and 0 folders.
-[2016.02.26-10.26.29:081][182]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001BD6E19ADE0
-[2016.02.26-10.26.29:137][182]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.02.26-10.26.29:137][182]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.02.26-10.26.29:379][183]Cmd: QUIT_EDITOR
-[2016.02.26-10.26.29:565][183]LogExit: Preparing to exit.
-[2016.02.26-10.26.30:695][183]LogExit: Editor shut down
-[2016.02.26-10.26.30:696][183]LogExit: Transaction tracking system shut down
-[2016.02.26-10.26.30:699][183]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001BD6076B920
-[2016.02.26-10.26.30:700][183]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000001BD6E199940
-[2016.02.26-10.26.30:991][183]LogExit: Object subsystem successfully closed.
-[2016.02.26-10.26.31:005][183]LogD3D11RHI: Shutdown
-[2016.02.26-10.26.31:006][183]LogD3D11RHI: CleanupD3DDevice
-[2016.02.26-10.26.31:089][183]LogD3D11RHI: ~FD3D11DynamicRHI
-[2016.02.26-10.26.31:118][183]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (200)
-[2016.02.26-10.26.31:118][183]LogModuleManager: Shutting down and abandoning module BlueprintGraph (199)
-[2016.02.26-10.26.31:118][183]LogModuleManager: Shutting down and abandoning module CrashTracker (198)
-[2016.02.26-10.26.31:118][183]LogModuleManager: Shutting down and abandoning module SuperSearch (197)
-[2016.02.26-10.26.31:118][183]LogModuleManager: Shutting down and abandoning module WidgetCarousel (196)
-[2016.02.26-10.26.31:118][183]LogModuleManager: Shutting down and abandoning module AddContentDialog (195)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module EditorWidgets (194)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module CollectionManager (193)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module SceneOutliner (192)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module StatsViewer (191)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module FoliageEdit (190)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module LandscapeEditor (189)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module ActorPickerMode (188)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module GeometryMode (187)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module TextureAlignMode (186)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module BspMode (185)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module PlacementMode (184)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module AutomationWorker (183)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module CharacterAI (182)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module SmartSnapping (181)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module ViewportSnapping (180)
-[2016.02.26-10.26.31:125][183]LogModuleManager: Shutting down and abandoning module LogVisualizer (179)
-[2016.02.26-10.26.31:126][183]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (178)
-[2016.02.26-10.26.31:126][183]LogModuleManager: Shutting down and abandoning module IntroTutorials (177)
-[2016.02.26-10.26.31:126][183]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (176)
-[2016.02.26-10.26.31:126][183]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (175)
-[2016.02.26-10.26.31:126][183]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (174)
-[2016.02.26-10.26.31:126][183]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (173)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (172)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (171)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (170)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module MergeActors (169)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module SizeMap (168)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module TreeMap (167)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module ReferenceViewer (166)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module LocalizationService (165)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (164)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module HardwareTargeting (163)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (162)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module UndoHistory (161)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (160)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module UserFeedback (159)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module XmlParser (158)
-[2016.02.26-10.26.31:708][183]LogModuleManager: Shutting down and abandoning module Blutility (157)
-[2016.02.26-10.26.31:709][183]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (156)
-[2016.02.26-10.26.31:709][183]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (155)
-[2016.02.26-10.26.31:709][183]LogModuleManager: Shutting down and abandoning module InputBindingEditor (154)
-[2016.02.26-10.26.31:709][183]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (153)
-[2016.02.26-10.26.31:709][183]LogModuleManager: Shutting down and abandoning module SettingsEditor (152)
-[2016.02.26-10.26.31:709][183]LogModuleManager: Shutting down and abandoning module ProjectLauncher (151)
-[2016.02.26-10.26.31:709][183]LogModuleManager: Shutting down and abandoning module SessionFrontend (150)
-[2016.02.26-10.26.31:709][183]LogModuleManager: Shutting down and abandoning module ProfilerClient (149)
-[2016.02.26-10.26.31:709][183]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (148)
-[2016.02.26-10.26.31:709][183]LogModuleManager: Shutting down and abandoning module DeviceManager (147)
-[2016.02.26-10.26.31:709][183]LogModuleManager: Shutting down and abandoning module AutomationController (146)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module AutomationWindow (145)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module Layers (144)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (143)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module DetailCustomizations (142)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module PackagesDialog (141)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module Persona (140)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module Kismet (139)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module GraphEditor (138)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module ClassViewer (137)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module Toolbox (136)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module ModuleUI (135)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module MovieSceneTools (134)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module OutputLog (133)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module GammaUI (132)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module Documentation (131)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (130)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (129)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module AnalyticsET (128)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module Analytics (127)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module AITestSuite (126)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module GameplayDebugger (125)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module AIModule (124)
-[2016.02.26-10.26.31:710][183]LogModuleManager: Shutting down and abandoning module ProfilerService (123)
-[2016.02.26-10.26.31:798][183]LogModuleManager: Shutting down and abandoning module TaskGraph (122)
-[2016.02.26-10.26.31:798][183]LogModuleManager: Shutting down and abandoning module SlateRemote (121)
-[2016.02.26-10.26.31:798][183]LogModuleManager: Shutting down and abandoning module SteamVRController (120)
-[2016.02.26-10.26.31:798][183]LogModuleManager: Shutting down and abandoning module SteamVR (119)
-[2016.02.26-10.26.31:798][183]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (118)
-[2016.02.26-10.26.31:798][183]LogModuleManager: Shutting down and abandoning module OculusLibrary (117)
-[2016.02.26-10.26.31:798][183]LogModuleManager: Shutting down and abandoning module OculusInput (116)
-[2016.02.26-10.26.31:798][183]LogModuleManager: Shutting down and abandoning module LeapMotionController (115)
-[2016.02.26-10.26.31:840][183]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (114)
-[2016.02.26-10.26.31:840][183]LogModuleManager: Shutting down and abandoning module CableComponent (113)
-[2016.02.26-10.26.31:840][183]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (112)
-[2016.02.26-10.26.31:840][183]LogModuleManager: Shutting down and abandoning module MessagingDebugger (111)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (110)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module HTML5Networking (109)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (108)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module PluginBrowser (107)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module EpicSurvey (106)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module DesktopPlatform (105)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (104)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module UObjectPlugin (103)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (102)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (101)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module SourceControl (100)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module GitSourceControl (99)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (98)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (97)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (96)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module MeshPaint (95)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module SlateReflector (94)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module HotReload (93)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module MainFrame (92)
-[2016.02.26-10.26.31:841][183]LogModuleManager: Shutting down and abandoning module LevelEditor (91)
-[2016.02.26-10.26.31:842][183]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (90)
-[2016.02.26-10.26.31:847][183]LogModuleManager: Shutting down and abandoning module AssetRegistry (89)
-[2016.02.26-10.26.31:926][183]LogModuleManager: Shutting down and abandoning module ContentBrowser (88)
-[2016.02.26-10.26.31:927][183]LogModuleManager: Shutting down and abandoning module Paper2DEditor (87)
-[2016.02.26-10.26.31:927][183]LogModuleManager: Shutting down and abandoning module UdpMessaging (86)
-[2016.02.26-10.26.32:027][183]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (85)
-[2016.02.26-10.26.32:027][183]LogModuleManager: Shutting down and abandoning module Paper2D (84)
-[2016.02.26-10.26.32:027][183]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (83)
-[2016.02.26-10.26.32:031][183]LogModuleManager: Shutting down and abandoning module Media (82)
-[2016.02.26-10.26.32:031][183]LogModuleManager: Shutting down and abandoning module WmfMedia (81)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (79)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module PropertyEditor (78)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (77)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module FunctionalTesting (76)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (75)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (74)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module MessageLog (73)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module Sequencer (72)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module AssetTools (71)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module UMGEditor (70)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module UMG (69)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module Slate (68)
-[2016.02.26-10.26.32:032][183]LogModuleManager: Shutting down and abandoning module EditorStyle (67)
-[2016.02.26-10.26.32:035][183]LogModuleManager: Shutting down and abandoning module SessionServices (66)
-[2016.02.26-10.26.32:035][183]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (65)
-[2016.02.26-10.26.32:035][183]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (64)
-[2016.02.26-10.26.32:035][183]LogModuleManager: Shutting down and abandoning module XAudio2 (63)
-[2016.02.26-10.26.32:035][183]LogModuleManager: Shutting down and abandoning module Networking (61)
-[2016.02.26-10.26.32:035][183]LogModuleManager: Shutting down and abandoning module Core (60)
-[2016.02.26-10.26.32:035][183]LogModuleManager: Shutting down and abandoning module KismetCompiler (59)
-[2016.02.26-10.26.32:035][183]LogModuleManager: Shutting down and abandoning module PhysXFormats (58)
-[2016.02.26-10.26.32:035][183]LogModuleManager: Shutting down and abandoning module MeshUtilities (57)
-[2016.02.26-10.26.32:035][183]LogModuleManager: Shutting down and abandoning module DerivedDataCache (56)
-[2016.02.26-10.26.32:073][183]LogDerivedDataCache: Shutdown
-[2016.02.26-10.26.32:073][183]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (55)
-[2016.02.26-10.26.32:073][183]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (54)
-[2016.02.26-10.26.32:073][183]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (53)
-[2016.02.26-10.26.32:073][183]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (52)
-[2016.02.26-10.26.32:073][183]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (51)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (50)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (49)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module ImageWrapper (48)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (47)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (46)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (45)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (44)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (43)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (42)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (41)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (40)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module Messaging (39)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module InputCore (22)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module Settings (21)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2016.02.26-10.26.32:074][183]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2016.02.26-10.26.33:076][183]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2016.02.26-10.26.33:076][183]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2016.02.26-10.26.33:076][183]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2016.02.26-10.26.33:076][183]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2016.02.26-10.26.33:077][183]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2016.02.26-10.26.33:077][183]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2016.02.26-10.26.33:077][183]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2016.02.26-10.26.33:082][183]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2016.02.26-10.26.33:083][183]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2016.02.26-10.26.33:083][183]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2016.02.26-10.26.33:083][183]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2016.02.26-10.26.33:083][183]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2016.02.26-10.26.33:083][183]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2016.02.26-10.26.33:083][183]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2016.02.26-10.26.33:083][183]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2016.02.26-10.26.33:083][183]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2016.02.26-10.26.33:083][183]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2016.02.26-10.26.33:084][183]LogExit: Exiting.
-[2016.02.26-10.26.33:096][183]Log file closed, 02/26/16 12:26:33
+﻿[2016.03.01-10.36.06:368][  0]Log file open, 03/01/16 12:36:06
+[2016.03.01-10.36.06:368][  0]LogInit:Display: Running engine for game: Inssiders
+[2016.03.01-10.36.06:368][  0]LogPlatformFile: Not using cached read wrapper
+[2016.03.01-10.36.06:368][  0]LogInit:Display: RandInit(2111020926) SRandInit(2111020929).
+[2016.03.01-10.36.06:368][  0]LogTaskGraph: Started task graph with 4 named threads and 6 total threads.
+[2016.03.01-10.36.06:368][  0]LogStats: Stats thread started at 0.090009
+[2016.03.01-10.36.06:368][  0]LogInit: Version: 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.03.01-10.36.06:368][  0]LogInit: API Version: 2758231
+[2016.03.01-10.36.06:368][  0]LogInit: Compiled (64-bit): Feb 18 2016 15:47:04
+[2016.03.01-10.36.06:368][  0]LogInit: Compiled with Visual C++: 19.00.23026.00
+[2016.03.01-10.36.06:368][  0]LogInit: Build Configuration: Development
+[2016.03.01-10.36.06:368][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.10
+[2016.03.01-10.36.06:368][  0]LogInit: Command line:  
+[2016.03.01-10.36.06:368][  0]LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.10/Engine/Binaries/Win64/
+[2016.03.01-10.36.06:368][  0]LogInit: Rocket: 1
+[2016.03.01-10.36.06:379][  0]LogInit: Using libcurl 7.41.0
+[2016.03.01-10.36.06:379][  0]LogInit:  - built for x86_64-pc-win32
+[2016.03.01-10.36.06:379][  0]LogInit:  - supports SSL with WinSSL
+[2016.03.01-10.36.06:379][  0]LogInit:  - other features:
+[2016.03.01-10.36.06:379][  0]LogInit:      CURL_VERSION_SSL
+[2016.03.01-10.36.06:379][  0]LogInit:      CURL_VERSION_IPV6
+[2016.03.01-10.36.06:379][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2016.03.01-10.36.06:379][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2016.03.01-10.36.06:379][  0]LogInit:      CURL_VERSION_IDN
+[2016.03.01-10.36.06:379][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2016.03.01-10.36.06:379][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2016.03.01-10.36.06:379][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2016.03.01-10.36.06:379][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2016.03.01-10.36.06:379][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2016.03.01-10.36.06:391][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2016.03.01-10.36.06:401][  0]LogInit: Object subsystem initialized
+[2016.03.01-10.36.06:401][  0]LogInit: Selected Device Profile: [Windows]
+[2016.03.01-10.36.06:401][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.03.01-10.36.06:416][  0]LogInit: Computer: DESKTOP-KG0OGIL
+[2016.03.01-10.36.06:416][  0]LogInit: User: Игорь
+[2016.03.01-10.36.06:416][  0]LogInit: CPU Page size=4096, Cores=3
+[2016.03.01-10.36.06:416][  0]LogInit: High frequency timer resolution =3.228956 MHz
+[2016.03.01-10.36.06:416][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2016.03.01-10.36.06:416][  0]LogMemory: Platform Memory Stats for Windows
+[2016.03.01-10.36.06:416][  0]LogMemory: Process Physical Memory: 55.97 MB used, 55.97 MB peak
+[2016.03.01-10.36.06:416][  0]LogMemory: Process Virtual Memory: 57.92 MB used, 57.92 MB peak
+[2016.03.01-10.36.06:416][  0]LogMemory: Physical Memory: 3424.13 MB used, 8175.23 MB total
+[2016.03.01-10.36.06:416][  0]LogMemory: Virtual Memory: 369.26 MB used, 134217728.00 MB total
+[2016.03.01-10.36.06:471][  0]LogTextLocalizationManager: No translations for ('ru-RU') exist, falling back to 'en' for localization and internationalization data.
+[2016.03.01-10.36.07:196][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GT 730 (Feature Level 11_0)
+[2016.03.01-10.36.07:196][  0]LogD3D11RHI: Adapter has 1996MB of dedicated video memory, 0MB of dedicated system memory, and 2047MB of shared system memory, 2 output[s]
+[2016.03.01-10.36.07:198][  0]LogD3D11RHI: Found D3D11 adapter 1: Microsoft Basic Render Driver (Feature Level 11_0)
+[2016.03.01-10.36.07:198][  0]LogD3D11RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 0 output[s]
+[2016.03.01-10.36.07:198][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2016.03.01-10.36.07:207][  0]LogD3D11RHI: !Direct3DDevice
+[2016.03.01-10.36.07:207][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.03.01-10.36.07:224][  0]LogD3D11RHI: Async texture creation enabled
+[2016.03.01-10.36.07:242][  0]LogShaderCompilers: Guid format shader working directory is 14 characters bigger than the processId version (D:/Inssiders/inssiders/Inssiders/Intermediate/Shaders/WorkingDirectory/10952/).
+[2016.03.01-10.36.07:243][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/D395~1/AppData/Local/Temp/UnrealShaderWorkingDir/6A448EB94C496D7AD0ECFD966EDACD92/'.
+[2016.03.01-10.36.07:243][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.03.01-10.36.08:775][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.03.01-10.36.08:784][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.03.01-10.36.08:793][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.03.01-10.36.08:801][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.03.01-10.36.08:809][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.03.01-10.36.08:814][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.03.01-10.36.08:819][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.03.01-10.36.08:824][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.03.01-10.36.08:829][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.03.01-10.36.08:832][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.03.01-10.36.08:837][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.03.01-10.36.08:848][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.03.01-10.36.08:848][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.03.01-10.36.08:849][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.03.01-10.36.08:871][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.03.01-10.36.08:876][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.03.01-10.36.08:881][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.03.01-10.36.08:887][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.03.01-10.36.08:887][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.03.01-10.36.09:041][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.03.01-10.36.09:406][  0]LogDerivedDataCache: Loaded boot cache 0.37s 41MB C:/Users/Игорь/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.03.01-10.36.09:406][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Игорь/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.03.01-10.36.09:406][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Inssiders/inssiders/Inssiders/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.03.01-10.36.09:406][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.03.01-10.36.09:406][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/Inssiders/inssiders/Inssiders/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.03.01-10.36.09:406][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.03.01-10.36.09:535][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.03.01-10.36.09:547][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Игорь/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.03.01-10.36.09:892][  0]LogInit: Selected Device Profile: [Windows]
+[2016.03.01-10.36.09:896][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2016.03.01-10.36.10:112][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.03.01-10.36.10:113][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.03.01-10.36.10:471][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.03.01-10.36.26:663][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.03.01-10.36.27:078][  0]LogAssetRegistry: FAssetRegistry took 0.0113 seconds to start up
+[2016.03.01-10.36.27:391][  0]SourceControl: Info Source control is disabled
+[2016.03.01-10.36.27:542][  0]SourceControl: Info Source control is disabled
+[2016.03.01-10.36.27:569][  0]SourceControl: Info Source control is disabled
+[2016.03.01-10.36.27:593][  0]SourceControl: Info Source control is disabled
+[2016.03.01-10.36.28:288][  0]LogObj: 28633 objects as part of root set at end of initial load.
+[2016.03.01-10.36.28:288][  0]LogUObjectAllocator: 6099744 out of 0 bytes used by permanent object pool.
+[2016.03.01-10.36.28:386][  0]LogEngine: Initializing Engine...
+[2016.03.01-10.36.28:392][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.03.01-10.36.28:393][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.03.01-10.36.28:567][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.03.01-10.36.28:576][  0]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.03.01-10.36.28:595][  0]LogInit: FAudioDevice initialized.
+[2016.03.01-10.36.28:648][  0]LogDerivedDataCache: Saved boot cache 0.05s 41MB C:/Users/Игорь/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc.
+[2016.03.01-10.36.28:662][  0]LogInit: Texture streaming: Enabled
+[2016.03.01-10.36.28:673][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2016.03.01-10.36.28:673][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.10.4-2872498+++depot+UE4-Releases+4.10
+[2016.03.01-10.36.28:674][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 619baabd4604f1d593d26e8e751894f6|075c1a30cb234253afcbb6ac30018a0b|32d9df30-af1d-4804-8f18-d55716e9c17f
+[2016.03.01-10.36.28:674][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2016.03.01-10.36.28:688][  0]LogInit: Transaction tracking system initialized
+[2016.03.01-10.36.28:737][  0]BlueprintLog: New page: Editor Load
+[2016.03.01-10.36.28:887][  0]LocalizationService: Info Localization service is disabled
+[2016.03.01-10.36.29:080][  0]LogConsoleResponse:Display: 
+[2016.03.01-10.36.29:237][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.03.01-10.36.29:478][  0]LogFileCache: Scanning file cache for directory 'D:/Inssiders/inssiders/Inssiders/Content/' took 0.01s
+[2016.03.01-10.36.29:478][  0]SourceControl: Info Source control is disabled
+[2016.03.01-10.36.29:479][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.03.01-10.36.29:479][  0]LightingResults: New page: Lighting Build
+[2016.03.01-10.36.29:484][  0]MapCheck: New page: Map Check
+[2016.03.01-10.36.29:484][  0]LightingResults: New page: Lighting Build
+[2016.03.01-10.36.29:503][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000002246740B420
+[2016.03.01-10.36.29:865][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2016.03.01-10.36.29:872][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.03.01-10.36.29:879][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.03.01-10.36.29:947][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 68.111ms to complete.
+[2016.03.01-10.36.29:947][  0]LogFileHelpers: Loading map 'Template_Default' took 0.469
+[2016.03.01-10.36.30:219][  0]LogCollectionManager: Loaded 0 collections in 0.004968 seconds
+[2016.03.01-10.36.30:261][  0]LogFileCache: Scanning file cache for directory 'D:/Inssiders/inssiders/Inssiders/Saved/Collections/' took 0.01s
+[2016.03.01-10.36.30:261][  0]LogFileCache: Scanning file cache for directory 'D:/Inssiders/inssiders/Inssiders/Content/Developers/Игорь/Collections/' took 0.01s
+[2016.03.01-10.36.30:261][  0]LogFileCache: Scanning file cache for directory 'D:/Inssiders/inssiders/Inssiders/Content/Collections/' took 0.01s
+[2016.03.01-10.36.30:261][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.03.01-10.36.30:273][  0]LogContentBrowser: Native class hierarchy populated in 0.0118 seconds. Added 1894 classes and 340 folders.
+[2016.03.01-10.36.30:283][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2016.03.01-10.36.30:808][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0011 seconds. Added 0 classes and 0 folders.
+[2016.03.01-10.36.30:817][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.03.01-10.36.30:823][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.03.01-10.36.30:846][  0]LogLoad: Full Startup: 25.11 seconds (BP compile: 0.06 seconds)
+[2016.03.01-10.36.30:856][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.03.01-10.36.30:857][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.03.01-10.36.30:863][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.03.01-10.36.30:919][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.03.01-10.36.31:146][  0]LogRenderer: Reallocating scene render targets to support 708x684 (Frame:2).
+[2016.03.01-10.36.31:407][  3]LogAssetRegistry: Asset discovery search completed in 4.3399 seconds
+[2016.03.01-10.36.31:407][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.03.01-10.36.31:407][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000027 seconds (updated 0 objects)
+[2016.03.01-10.38.02:921][655]MainFrameActions: Packaging (HTML5): Running AutomationTool...
+[2016.03.01-10.38.03:654][676]MainFrameActions: Packaging (HTML5): Program.Main: CWD=C:\Program Files (x86)\Epic Games\4.10\Engine\Binaries\DotNET
+[2016.03.01-10.38.03:785][680]MainFrameActions: Packaging (HTML5): Automation.ParseCommandLine: Parsing command line: BuildCookRun -rocket -nocompile -nocompileeditor -installed -nop4 -project=D:/Inssiders/inssiders/Inssiders/Inssiders.uproject -cook -stage -archive -archivedirectory=D:/Inssiders -package -clientconfig=Development -ue4exe=UE4Editor-Cmd.exe -prereqs -nodebuginfo -targetplatform=HTML5 -CrashReporter -utf8output
+[2016.03.01-10.38.03:788][680]MainFrameActions: Packaging (HTML5): Automation.Process: IsBuildMachine=False
+[2016.03.01-10.38.03:789][680]MainFrameActions: Packaging (HTML5): Automation.Process: ShouldKillProcesses=True
+[2016.03.01-10.38.03:789][680]MainFrameActions: Packaging (HTML5): Automation.Process: Setting up command environment.
+[2016.03.01-10.38.03:828][681]MainFrameActions: Packaging (HTML5): CommandUtils.SetEnvVar: SetEnvVar uebp_EngineSavedFolder=C:/Program Files (x86)/Epic Games/4.10/Engine/Programs/AutomationTool/Saved
+[2016.03.01-10.38.03:831][681]MainFrameActions: Packaging (HTML5): CommandUtils.DeleteDirectoryContents: DeleteDirectoryContents(C:/Users/Игорь/AppData/Roaming/Unreal Engine/AutomationTool/Logs/C+Program+Files+(x86)+Epic+Games+4.10)
+[2016.03.01-10.38.03:945][684]MainFrameActions: Packaging (HTML5): WindowsHostPlatform.SetFrameworkVars: Setting .Net Framework environment variables.
+[2016.03.01-10.38.03:945][684]MainFrameActions: Packaging (HTML5): WindowsHostPlatform.SetFrameworkVars: Supports64bitExecutables=True
+[2016.03.01-10.38.03:948][684]MainFrameActions: Packaging (HTML5): WindowsHostPlatform.SetFrameworkVars: WindowsPlatform.CompilerVisualStudio2015
+[2016.03.01-10.38.03:955][685]MainFrameActions: Packaging (HTML5): WindowsHostPlatform.SetFrameworkVars: WindowsSDKDir=C:\Program Files (x86)\Windows Kits\8.1\
+[2016.03.01-10.38.03:955][685]MainFrameActions: Packaging (HTML5): WindowsHostPlatform.SetFrameworkVars: BaseVSToolPath=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools
+[2016.03.01-10.38.03:971][685]MainFrameActions: Packaging (HTML5): WindowsHostPlatform.SetFrameworkVars: Setting VS environment variables via C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\..\..\VC\bin\x86_amd64\vcvarsx86_amd64.bat.
+[2016.03.01-10.38.07:426][787]MainFrameActions: Packaging (HTML5): CommandUtils.SetEnvVar: SetEnvVar FrameworkDir=C:\Windows\Microsoft.NET\Framework\
+[2016.03.01-10.38.07:426][787]MainFrameActions: Packaging (HTML5): CommandUtils.SetEnvVar: SetEnvVar FrameworkVersion=v4.0.30319
+[2016.03.01-10.38.07:426][787]MainFrameActions: Packaging (HTML5): WindowsHostPlatform.SetFrameworkVars: FrameworkDir=C:\Windows\Microsoft.NET\Framework\
+[2016.03.01-10.38.07:426][787]MainFrameActions: Packaging (HTML5): WindowsHostPlatform.SetFrameworkVars: FrameworkVersion=v4.0.30319
+[2016.03.01-10.38.07:450][788]MainFrameActions: Packaging (HTML5): ProjectUtils.CleanupFolders: Cleaning up project rules folder
+[2016.03.01-10.38.07:451][788]MainFrameActions: Packaging (HTML5): CommandUtils.DeleteDirectoryContents: DeleteDirectoryContents(C:\Users\Игорь\AppData\Local\Temp\UAT\C+Program+Files+(x86)+Epic+Games+4.10\Rules)
+[2016.03.01-10.38.07:451][788]MainFrameActions: Packaging (HTML5): Automation.Process: Compiling scripts.
+[2016.03.01-10.38.07:594][792]MainFrameActions: Packaging (HTML5): ScriptCompiler.LoadPreCompiledScriptAssemblies: Loading precompiled script DLLs
+[2016.03.01-10.38.07:596][792]MainFrameActions: Packaging (HTML5): ScriptCompiler.LoadPreCompiledScriptAssemblies: Found 9 script DLL(s).
+[2016.03.01-10.38.07:963][803]MainFrameActions: Packaging (HTML5): BuildCookRun.SetupParams: Setting up ProjectParams for D:\Inssiders\inssiders\Inssiders\Inssiders.uproject
+[2016.03.01-10.38.10:173][868]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Project Params **************
+[2016.03.01-10.38.10:173][868]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: AdditionalServerMapParams=
+[2016.03.01-10.38.10:173][868]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Archive=True
+[2016.03.01-10.38.10:173][868]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ArchiveMetaData=False
+[2016.03.01-10.38.10:173][868]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: CreateAppBundle=True
+[2016.03.01-10.38.10:174][868]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: BaseArchiveDirectory=D:\Inssiders
+[2016.03.01-10.38.10:175][868]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: BaseStageDirectory=D:\Inssiders\inssiders\Inssiders\Saved\StagedBuilds
+[2016.03.01-10.38.10:175][868]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Build=False
+[2016.03.01-10.38.10:175][868]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Cook=True
+[2016.03.01-10.38.10:190][868]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Clean=
+[2016.03.01-10.38.10:190][868]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Client=False
+[2016.03.01-10.38.10:208][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ClientConfigsToBuild=Development
+[2016.03.01-10.38.10:208][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ClientCookedTargets=UE4Game
+[2016.03.01-10.38.10:210][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ClientTargetPlatform=HTML5
+[2016.03.01-10.38.10:210][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Compressed=False
+[2016.03.01-10.38.10:210][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: UseDebugParamForEditorExe=False
+[2016.03.01-10.38.10:210][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: CookFlavor=
+[2016.03.01-10.38.10:210][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: CookOnTheFly=False
+[2016.03.01-10.38.10:211][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: CookOnTheFlyStreaming=False
+[2016.03.01-10.38.10:211][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: UnversionedCookedContent=False
+[2016.03.01-10.38.10:211][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: SkipCookingEditorContent=False
+[2016.03.01-10.38.10:211][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: NumCookersToSpawn=0
+[2016.03.01-10.38.10:211][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: GeneratePatch=False
+[2016.03.01-10.38.10:211][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: CreateReleaseVersion=
+[2016.03.01-10.38.10:211][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: BasedOnReleaseVersion=
+[2016.03.01-10.38.10:211][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: DLCName=
+[2016.03.01-10.38.10:211][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: DLCIncludeEngineContent=False
+[2016.03.01-10.38.10:212][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: AdditionalCookerOptions=
+[2016.03.01-10.38.10:212][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: DedicatedServer=False
+[2016.03.01-10.38.10:212][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: DirectoriesToCook=
+[2016.03.01-10.38.10:212][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: CulturesToCook=
+[2016.03.01-10.38.10:212][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: EditorTargets=
+[2016.03.01-10.38.10:212][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Foreign=False
+[2016.03.01-10.38.10:212][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: IsCodeBasedProject=False
+[2016.03.01-10.38.10:212][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: IsProgramTarget=False
+[2016.03.01-10.38.10:212][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: IterativeCooking=False
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: CookAll=False
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: CookMapsOnly=False
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Deploy=False
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: IterativeDeploy=False
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: FastCook=False
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: LogWindow=False
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Manifests=False
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: MapToRun=
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: NoClient=False
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: NumClients=0
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: NoDebugInfo=True
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: NoCleanStage=False
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: NoXGE=False
+[2016.03.01-10.38.10:213][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: MapsToCook=
+[2016.03.01-10.38.10:214][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Pak=False
+[2016.03.01-10.38.10:214][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Package=True
+[2016.03.01-10.38.10:214][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: NullRHI=False
+[2016.03.01-10.38.10:214][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: FakeClient=False
+[2016.03.01-10.38.10:214][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: EditorTest=False
+[2016.03.01-10.38.10:214][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: RunAutomationTests=False
+[2016.03.01-10.38.10:214][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: RunAutomationTest=
+[2016.03.01-10.38.10:214][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: RunTimeoutSeconds=0
+[2016.03.01-10.38.10:214][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: CrashIndex=0
+[2016.03.01-10.38.10:214][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ProgramTargets=
+[2016.03.01-10.38.10:215][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ProjectBinariesFolder=C:\Program Files (x86)\Epic Games\4.10\Engine\Binaries\HTML5
+[2016.03.01-10.38.10:215][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ProjectBinariesPath=C:\Program Files (x86)\Epic Games\4.10\Engine\Binaries\HTML5
+[2016.03.01-10.38.10:215][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ProjectGameExeFilename=C:\Program Files (x86)\Epic Games\4.10\Engine\Binaries\HTML5\UE4Game.js
+[2016.03.01-10.38.10:215][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ProjectGameExePath=C:\Program Files (x86)\Epic Games\4.10\Engine\Binaries\HTML5\UE4Game.js
+[2016.03.01-10.38.10:215][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Distribution=False
+[2016.03.01-10.38.10:215][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Prebuilt=False
+[2016.03.01-10.38.10:215][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Prereqs=True
+[2016.03.01-10.38.10:217][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: NoBootstrapExe=False
+[2016.03.01-10.38.10:217][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: RawProjectPath=D:\Inssiders\inssiders\Inssiders\Inssiders.uproject
+[2016.03.01-10.38.10:217][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Rocket=True
+[2016.03.01-10.38.10:217][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Run=False
+[2016.03.01-10.38.10:217][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ServerConfigsToBuild=Development
+[2016.03.01-10.38.10:217][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ServerCookedTargets=
+[2016.03.01-10.38.10:217][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ServerTargetPlatform=HTML5
+[2016.03.01-10.38.10:217][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: ShortProjectName=Inssiders
+[2016.03.01-10.38.10:217][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: SignedPak=False
+[2016.03.01-10.38.10:217][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: SignPak=
+[2016.03.01-10.38.10:217][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: SkipCook=False
+[2016.03.01-10.38.10:217][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: SkipCookOnTheFly=False
+[2016.03.01-10.38.10:218][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: SkipPak=False
+[2016.03.01-10.38.10:218][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: SkipStage=False
+[2016.03.01-10.38.10:218][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Stage=True
+[2016.03.01-10.38.10:218][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: bUsesSteam=False
+[2016.03.01-10.38.10:218][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: bUsesCEF3=False
+[2016.03.01-10.38.10:218][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: bUsesSlate=True
+[2016.03.01-10.38.10:218][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: bDebugBuildsActuallyUseDebugCRT=False
+[2016.03.01-10.38.10:219][869]MainFrameActions: Packaging (HTML5): ProjectParams.ValidateAndLog: Project Params **************
+[2016.03.01-10.38.10:309][872]MainFrameActions: Packaging (HTML5): Project.Cook: ********** COOK COMMAND STARTED **********
+[2016.03.01-10.38.10:345][873]MainFrameActions: Packaging (HTML5): CommandUtils.RunCommandlet: Running UE4Editor Cook for project D:\Inssiders\inssiders\Inssiders\Inssiders.uproject
+[2016.03.01-10.38.10:358][873]MainFrameActions: Packaging (HTML5): CommandUtils.RunCommandlet: Commandlet log file is C:\Program Files (x86)\Epic Games\4.10\Engine\Programs\AutomationTool\Saved\Cook-2016.03.01-12.38.10.txt
+[2016.03.01-10.38.10:428][875]MainFrameActions: Packaging (HTML5): CommandUtils.Run: Run: C:\Program Files (x86)\Epic Games\4.10\Engine\Binaries\Win64\UE4Editor-Cmd.exe D:\Inssiders\inssiders\Inssiders\Inssiders.uproject -run=Cook -Map=/Engine/Maps/Entry  -I18NPreset=  -TargetPlatform=HTML5 -fileopenlog -abslog="C:\Program Files (x86)\Epic Games\4.10\Engine\Programs\AutomationTool\Saved\Cook-2016.03.01-12.38.10.txt" -stdout -FORCELOGFLUSH -CrashForUAT -unattended  -UTF8Output
+[2016.03.01-10.38.10:761][885]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: 
+[2016.03.01-10.38.10:762][885]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: LogInit:Display: Running engine for game: Inssiders
+[2016.03.01-10.38.11:242][899]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: LogInit:Display: RandInit(-1780708131) SRandInit(-1780708128).
+[2016.03.01-10.38.12:299][930]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: LogConfig:Warning: Failed to saved backup for config[EditorSettings]
+[2016.03.01-10.38.13:769][973]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.12:297][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.03.01-10.38.13:782][974]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:768][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.03.01-10.38.13:791][974]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:780][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.03.01-10.38.13:801][974]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:791][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.03.01-10.38.13:814][975]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:800][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.03.01-10.38.13:818][975]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:811][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.03.01-10.38.13:825][975]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:817][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.03.01-10.38.13:831][975]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:823][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.03.01-10.38.13:837][975]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:830][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.03.01-10.38.13:843][975]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:836][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.03.01-10.38.13:850][976]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:842][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.03.01-10.38.13:863][976]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:850][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.03.01-10.38.13:863][976]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:863][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.03.01-10.38.13:865][976]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:863][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.03.01-10.38.13:889][977]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:864][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.03.01-10.38.13:896][977]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:889][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.03.01-10.38.13:900][977]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:895][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.03.01-10.38.13:906][977]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:900][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.03.01-10.38.13:906][977]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:905][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.03.01-10.38.14:105][983]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.13:905][  0]LogTargetPlatformManager:Display: Building Assets For HTML5
+[2016.03.01-10.38.14:225][987]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.14:104][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.03.01-10.38.14:338][990]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.14:222][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Игорь/AppData/Local/UnrealEngine/4.10/DerivedDataCache/Boot.ddc
+[2016.03.01-10.44.43:917][958]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.03.01-10.44.43:917][958]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.03.01-10.44.57:854][130]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.38.14:337][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.03.01-10.45.16:213][183]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.44.57:517][  0]LogCook:Display: Done creating registry. It took  2.94s.
+[2016.03.01-10.45.16:213][183]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.15:922][  0]LogMaterial:Warning: Failed to compile Material /Engine/EditorMaterials/PreviewShadowIndicatorMaterial.PreviewShadowIndicatorMaterial for platform GLSL_ES2_WEBGL, Default Material will be used in game.
+[2016.03.01-10.45.18:553][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.15:922][  0]LogMaterial:Warning: 	(Node TextureSample) Node not supported in feature level ES2
+[2016.03.01-10.45.18:553][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:259][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/VirtualJoystick_Thumb -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset
+[2016.03.01-10.45.18:553][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:268][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset
+[2016.03.01-10.45.18:553][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:271][  0]LogCook:Display: Cooking /Engine/EngineFonts/Roboto -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineFonts/Roboto.uasset
+[2016.03.01-10.45.18:553][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:371][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineFonts/Roboto.uasset
+[2016.03.01-10.45.18:553][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:373][  0]LogCook:Display: Cooking /Engine/EngineMaterials/Widget3DPassThrough_Translucent -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent.uasset
+[2016.03.01-10.45.18:553][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:380][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent.uasset
+[2016.03.01-10.45.18:553][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:383][  0]LogCook:Display: Cooking /Engine/EngineMaterials/Widget3DPassThrough -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough.uasset
+[2016.03.01-10.45.18:553][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:403][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough.uasset
+[2016.03.01-10.45.18:554][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:404][  0]LogCook:Display: Cooking /Engine/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedUVs -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedUVs.uasset
+[2016.03.01-10.45.18:554][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:407][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedUVs.uasset
+[2016.03.01-10.45.18:554][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:412][  0]LogCook:Display: Cooking /Engine/EngineResources/WhiteSquareTexture -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/WhiteSquareTexture.uasset
+[2016.03.01-10.45.18:554][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:413][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/WhiteSquareTexture.uasset
+[2016.03.01-10.45.18:554][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:414][  0]LogCook:Display: Cooking /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness.uasset
+[2016.03.01-10.45.18:554][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:416][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness.uasset
+[2016.03.01-10.45.18:554][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:417][  0]LogCook:Display: Cooking /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uasset
+[2016.03.01-10.45.18:555][190]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:421][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:422][  0]LogCook:Display: Cooking /Engine/EngineMaterials/WorldGridMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/WorldGridMaterial.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:549][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/WorldGridMaterial.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:550][  0]LogCook:Display: Cooking /Engine/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:559][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:560][  0]LogCook:Display: Cooking /Engine/EngineMaterials/T_Default_Material_Grid_M -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/T_Default_Material_Grid_M.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:581][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/T_Default_Material_Grid_M.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:597][  0]LogCook:Display: Cooking /Engine/EngineMaterials/T_Default_Material_Grid_N -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/T_Default_Material_Grid_N.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:688][  0]LogTexture:Display: Building textures: T_Default_Material_Grid_N (DXT5)
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:689][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/T_Default_Material_Grid_N.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:690][  0]LogCook:Display: Cooking /Engine/EngineMaterials/DefaultDeferredDecalMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultDeferredDecalMaterial.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:695][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultDeferredDecalMaterial.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:696][  0]LogCook:Display: Cooking /Engine/EngineMaterials/DefaultDiffuse -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultDiffuse.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:801][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultDiffuse.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:802][  0]LogCook:Display: Cooking /Engine/EngineMaterials/DefaultLightFunctionMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultLightFunctionMaterial.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:805][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultLightFunctionMaterial.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:806][  0]LogCook:Display: Cooking /Engine/EngineMaterials/DefaultPostProcessMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultPostProcessMaterial.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:812][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultPostProcessMaterial.uasset
+[2016.03.01-10.45.18:880][191]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:813][  0]LogCook:Display: Cooking /Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.uasset
+[2016.03.01-10.45.19:216][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:815][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.uasset
+[2016.03.01-10.45.19:216][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:816][  0]LogCook:Display: Cooking /Engine/EngineResources/DefaultTexture -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/DefaultTexture.uasset
+[2016.03.01-10.45.19:216][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:857][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/DefaultTexture.uasset
+[2016.03.01-10.45.19:216][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:859][  0]LogCook:Display: Cooking /Engine/EngineMaterials/Widget3DPassThrough_Translucent_OneSided -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent_OneSided.uasset
+[2016.03.01-10.45.19:216][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:866][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent_OneSided.uasset
+[2016.03.01-10.45.19:216][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:867][  0]LogCook:Display: Cooking /Engine/EngineMaterials/Widget3DPassThrough_Opaque -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque.uasset
+[2016.03.01-10.45.19:216][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:885][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque.uasset
+[2016.03.01-10.45.19:216][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:887][  0]LogCook:Display: Cooking /Engine/EngineMaterials/Widget3DPassThrough_Opaque_OneSided -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque_OneSided.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:890][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque_OneSided.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:891][  0]LogCook:Display: Cooking /Engine/EngineMaterials/Widget3DPassThrough_Masked -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough_Masked.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:893][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough_Masked.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:894][  0]LogCook:Display: Cooking /Engine/EngineMaterials/Widget3DPassThrough_Masked_OneSided -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough_Masked_OneSided.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:897][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Widget3DPassThrough_Masked_OneSided.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:904][  0]LogCook:Display: Cooking /Engine/EditorResources/S_Actor -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorResources/S_Actor.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:928][  0]LogTexture:Display: Building textures: S_Actor (RGBA8)
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:929][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorResources/S_Actor.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:932][  0]LogCook:Display: Cooking /Engine/Maps/Templates/Thumbnails/Default -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Maps/Templates/Thumbnails/Default.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:942][  0]LogTexture:Display: Building textures: Default (RGBA8)
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:943][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Maps/Templates/Thumbnails/Default.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:944][  0]LogCook:Display: Cooking /Engine/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:970][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.18:974][  0]LogCook:Display: Cooking /Engine/EditorMaterials/ParticleSystems/PSysThumbnail_OOD -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.19:008][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.19:009][  0]LogCook:Display: Cooking /Engine/EditorLandscapeResources/DataLayer -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorLandscapeResources/DataLayer.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.19:010][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorLandscapeResources/DataLayer.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.19:011][  0]LogCook:Display: Cooking /Engine/EngineDamageTypes/DmgTypeBP_Environmental -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.19:207][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.19:208][  0]LogCook:Display: Cooking /Engine/EngineMeshes/Sphere -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMeshes/Sphere.uasset
+[2016.03.01-10.45.19:219][192]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.19:211][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMeshes/Sphere.uasset
+[2016.03.01-10.45.19:549][193]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.19:212][  0]LogCook:Display: Cooking /Engine/EngineFonts/RobotoDistanceField -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineFonts/RobotoDistanceField.uasset
+[2016.03.01-10.45.19:549][193]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.19:234][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineFonts/RobotoDistanceField.uasset
+[2016.03.01-10.45.47:706][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.19:235][  0]LogCook:Display: Cooking /Engine/EngineMaterials/DefaultTextMaterialOpaque -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultTextMaterialOpaque.uasset
+[2016.03.01-10.45.47:706][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:532][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultTextMaterialOpaque.uasset
+[2016.03.01-10.45.47:706][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:546][  0]LogCook:Display: Cooking /Engine/EditorResources/S_Trigger -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorResources/S_Trigger.uasset
+[2016.03.01-10.45.47:706][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:589][  0]LogTexture:Display: Building textures: S_Trigger (RGBA8)
+[2016.03.01-10.45.47:706][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:590][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorResources/S_Trigger.uasset
+[2016.03.01-10.45.47:706][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:596][  0]LogCook:Display: Cooking /Engine/EngineResources/GradientTexture0 -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/GradientTexture0.uasset
+[2016.03.01-10.45.47:706][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:597][  0]LogTexture:Display: Building textures: GradientTexture0 (RGBA8)
+[2016.03.01-10.45.47:706][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:633][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/GradientTexture0.uasset
+[2016.03.01-10.45.47:707][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:634][  0]LogCook:Display: Cooking /Engine/EngineResources/Black -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/Black.uasset
+[2016.03.01-10.45.47:707][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:670][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/Black.uasset
+[2016.03.01-10.45.47:707][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:671][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MatineeGroups/MAT_Groups_Float -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Float.uasset
+[2016.03.01-10.45.47:707][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:685][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Float.uasset
+[2016.03.01-10.45.47:707][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:687][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MatineeGroups/MAT_Groups_Director -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Director.uasset
+[2016.03.01-10.45.47:707][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:689][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Director.uasset
+[2016.03.01-10.45.47:707][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:690][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MatineeGroups/MAT_Groups_Event -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Event.uasset
+[2016.03.01-10.45.47:707][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:696][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Event.uasset
+[2016.03.01-10.45.47:707][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:697][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MatineeGroups/MAT_Groups_Anim -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Anim.uasset
+[2016.03.01-10.45.47:707][277]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:703][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Anim.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:705][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MatineeGroups/MAT_Groups_Fade -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Fade.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:712][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Fade.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:714][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MatineeGroups/MAT_Groups_Move -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Move.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:722][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Move.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:723][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MatineeGroups/MAT_Groups_Slomo -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Slomo.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:735][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Slomo.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:736][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MatineeGroups/MAT_ColorTrack -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_ColorTrack.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:741][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_ColorTrack.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:742][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MAT_Groups_Toggle -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MAT_Groups_Toggle.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:744][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MAT_Groups_Toggle.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:745][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MatineeGroups/MAT_Groups_AudioMaster -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_AudioMaster.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:753][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_AudioMaster.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:755][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MatineeGroups/MAT_Groups_Sound -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Sound.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:759][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Sound.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:761][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MatineeGroups/MAT_Groups_Vector -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Vector.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:763][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Vector.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:764][  0]LogCook:Display: Cooking /Engine/EditorMaterials/MAT_Groups_Visibility -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MAT_Groups_Visibility.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:775][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/MAT_Groups_Visibility.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:776][  0]LogCook:Display: Cooking /Engine/EngineResources/DefaultTextureCube -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/DefaultTextureCube.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:859][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/DefaultTextureCube.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:860][  0]LogCook:Display: Cooking /Engine/EngineSounds/Master -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/Master.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:862][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/Master.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:863][  0]LogCook:Display: Cooking /Engine/EngineSounds/Music -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/Music.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:893][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/Music.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:894][  0]LogCook:Display: Cooking /Engine/EngineSounds/SFX -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/SFX.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:898][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/SFX.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:899][  0]LogCook:Display: Cooking /Engine/EngineSounds/Normal_Attack -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/Normal_Attack.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:900][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/Normal_Attack.uasset
+[2016.03.01-10.45.48:039][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:901][  0]LogCook:Display: Cooking /Engine/EngineSounds/Special_Attack_PSM -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/Special_Attack_PSM.uasset
+[2016.03.01-10.45.48:040][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:902][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/Special_Attack_PSM.uasset
+[2016.03.01-10.45.48:040][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:903][  0]LogCook:Display: Cooking /Engine/EngineSounds/Duck_Normal_Attack_MixMod -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/Duck_Normal_Attack_MixMod.uasset
+[2016.03.01-10.45.48:040][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:905][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/Duck_Normal_Attack_MixMod.uasset
+[2016.03.01-10.45.48:040][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:906][  0]LogCook:Display: Cooking /Engine/EngineSounds/Voice -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/Voice.uasset
+[2016.03.01-10.45.48:040][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:907][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineSounds/Voice.uasset
+[2016.03.01-10.45.48:040][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:908][  0]LogCook:Display: Cooking /Engine/EngineMeshes/Cylinder -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMeshes/Cylinder.uasset
+[2016.03.01-10.45.48:040][278]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:911][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMeshes/Cylinder.uasset
+[2016.03.01-10.49.25:507][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.45.47:912][  0]LogCook:Display: Cooking /Engine/EngineMaterials/DefaultMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultMaterial.uasset
+[2016.03.01-10.49.25:507][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:190][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultMaterial.uasset
+[2016.03.01-10.49.25:507][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:194][  0]LogCook:Display: Cooking /Engine/EngineTireTypes/DefaultTireType -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineTireTypes/DefaultTireType.uasset
+[2016.03.01-10.49.25:507][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:201][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineTireTypes/DefaultTireType.uasset
+[2016.03.01-10.49.25:509][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:204][  0]LogCook:Display: Cooking /Engine/EngineResources/AICON-Red -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/AICON-Red.uasset
+[2016.03.01-10.49.25:510][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:210][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/AICON-Red.uasset
+[2016.03.01-10.49.25:510][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:212][  0]LogCook:Display: Cooking /Engine/EngineResources/AICON-Green -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/AICON-Green.uasset
+[2016.03.01-10.49.25:510][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:235][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineResources/AICON-Green.uasset
+[2016.03.01-10.49.25:510][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:237][  0]LogCook:Display: Cooking /Engine/Tutorial/Basics/LevelEditorAttract -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Basics/LevelEditorAttract.uasset
+[2016.03.01-10.49.25:510][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:247][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Basics/LevelEditorAttract.uasset
+[2016.03.01-10.49.25:510][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:249][  0]LogCook:Display: Cooking /Engine/Tutorial/Basics/LevelEditorOverview -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Basics/LevelEditorOverview.uasset
+[2016.03.01-10.49.25:510][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:270][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Basics/LevelEditorOverview.uasset
+[2016.03.01-10.49.25:510][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:273][  0]LogCook:Display: Cooking /Engine/Tutorial/Basics/TutorialAssets/icon_tab_Levels_40x -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Basics/TutorialAssets/icon_tab_Levels_40x.uasset
+[2016.03.01-10.49.25:510][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:294][  0]LogTexture:Display: Building textures: icon_tab_Levels_40x (RGBA8)
+[2016.03.01-10.49.25:510][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:296][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Basics/TutorialAssets/icon_tab_Levels_40x.uasset
+[2016.03.01-10.49.25:511][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:298][  0]LogCook:Display: Cooking /Engine/Tutorial/Code/AddingCode -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Code/AddingCode.uasset
+[2016.03.01-10.49.25:511][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:308][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Code/AddingCode.uasset
+[2016.03.01-10.49.25:511][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:310][  0]LogCook:Display: Cooking /Engine/Tutorial/BlueprintTutorials/ClassBlueprintsEditorOverview -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/ClassBlueprintsEditorOverview.uasset
+[2016.03.01-10.49.25:511][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:327][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/ClassBlueprintsEditorOverview.uasset
+[2016.03.01-10.49.25:512][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:332][  0]LogCook:Display: Cooking /Engine/Tutorial/BlueprintTutorials/TutorialAssets/Blueprint_64x -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Blueprint_64x.uasset
+[2016.03.01-10.49.25:512][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:338][  0]LogTexture:Display: Building textures: Blueprint_64x (RGBA8)
+[2016.03.01-10.49.25:512][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:341][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Blueprint_64x.uasset
+[2016.03.01-10.49.25:512][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:343][  0]LogCook:Display: Cooking /Engine/Tutorial/BlueprintTutorials/BlueprintEditorTutorial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/BlueprintEditorTutorial.uasset
+[2016.03.01-10.49.25:512][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:352][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/BlueprintEditorTutorial.uasset
+[2016.03.01-10.49.25:512][928]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:356][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/StaticMeshEditorTutorial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/StaticMeshEditorTutorial.uasset
+[2016.03.01-10.49.25:869][929]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:381][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/StaticMeshEditorTutorial.uasset
+[2016.03.01-10.49.25:869][929]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:384][  0]LogCook:Display: Cooking /Engine/Tutorial/Landscape/Landscape_Manage_Mode -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Landscape/Landscape_Manage_Mode.uasset
+[2016.03.01-10.49.25:869][929]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:396][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Landscape/Landscape_Manage_Mode.uasset
+[2016.03.01-10.49.25:869][929]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:419][  0]LogTexture:Display: Building textures: Landscape (RGBA8)
+[2016.03.01-10.49.25:869][929]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:420][  0]LogCook:Display: Cooking /Engine/Tutorial/Landscape/TutorialAssets/Landscape -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Landscape/TutorialAssets/Landscape.uasset
+[2016.03.01-10.49.25:869][929]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:437][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Landscape/TutorialAssets/Landscape.uasset
+[2016.03.01-10.49.25:869][929]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:440][  0]LogCook:Display: Cooking /Engine/Tutorial/ContentIntroCurve -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/ContentIntroCurve.uasset
+[2016.03.01-10.49.25:869][929]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:461][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/ContentIntroCurve.uasset
+[2016.03.01-10.49.25:869][929]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:463][  0]LogCook:Display: Cooking /Paper2D/MaskedUnlitSpriteMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset
+[2016.03.01-10.49.25:869][929]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:469][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset
+[2016.03.01-10.49.42:300][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.25:471][  0]LogCook:Display: Cooking /Paper2D/DefaultSpriteMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset
+[2016.03.01-10.49.42:302][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.41:977][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset
+[2016.03.01-10.49.42:302][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.41:993][  0]LogCook:Display: Cooking /Paper2D/PlaceholderTextures/DummySpriteTexture -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset
+[2016.03.01-10.49.42:302][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:019][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset
+[2016.03.01-10.49.42:302][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:022][  0]LogCook:Display: Cooking /Paper2D/OpaqueUnlitSpriteMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset
+[2016.03.01-10.49.42:302][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:052][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset
+[2016.03.01-10.49.42:302][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:060][  0]LogCook:Display: Cooking /Paper2D/DefaultPaperTerrainMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset
+[2016.03.01-10.49.42:303][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:066][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset
+[2016.03.01-10.49.42:303][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:069][  0]LogCook:Display: Cooking /Paper2D/DummySprite -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/DummySprite.uasset
+[2016.03.01-10.49.42:304][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:079][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/DummySprite.uasset
+[2016.03.01-10.49.42:304][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:084][  0]LogCook:Display: Cooking /Paper2D/DummySpriteTexture -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/2D/Paper2D/Content/DummySpriteTexture.uasset
+[2016.03.01-10.49.42:304][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:088][  0]LogSavePackage:Display: No exports found (or all exports are editor-only) for DummySpriteTexture. Package will not be saved.
+[2016.03.01-10.49.42:305][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:092][  0]LogCook:Display: Cooking /LeapMotionController/LM_CapsuleMesh -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/Runtime/LeapMotionController/Content/LM_CapsuleMesh.uasset
+[2016.03.01-10.49.42:305][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:112][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/Runtime/LeapMotionController/Content/LM_CapsuleMesh.uasset
+[2016.03.01-10.49.42:305][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:121][  0]LogCook:Display: Cooking /LeapMotionController/LM_TorusMesh -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/Runtime/LeapMotionController/Content/LM_TorusMesh.uasset
+[2016.03.01-10.49.42:305][978]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:140][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/Runtime/LeapMotionController/Content/LM_TorusMesh.uasset
+[2016.03.01-10.50.22:255][ 96]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.49.42:143][  0]LogCook:Display: Cooking /LeapMotionController/LM_HandColor -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/Runtime/LeapMotionController/Content/LM_HandColor.uasset
+[2016.03.01-10.50.22:255][ 96]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.22:114][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/Runtime/LeapMotionController/Content/LM_HandColor.uasset
+[2016.03.01-10.50.37:722][142]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.22:115][  0]LogCook:Display: Cooking /LeapMotionController/LM_PassthroughMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset
+[2016.03.01-10.50.37:722][142]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.37:672][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset
+[2016.03.01-10.50.37:722][142]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.37:676][  0]LogCook:Display: Cooking /LeapMotionController/LM_SampleDistortion -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/Runtime/LeapMotionController/Content/LM_SampleDistortion.uasset
+[2016.03.01-10.50.38:046][143]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.37:696][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/Runtime/LeapMotionController/Content/LM_SampleDistortion.uasset
+[2016.03.01-10.50.38:046][143]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.37:698][  0]LogCook:Display: Cooking /LeapMotionController/LM_TestTexture -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/Runtime/LeapMotionController/Content/LM_TestTexture.uasset
+[2016.03.01-10.50.38:048][143]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.37:724][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Plugins/Runtime/LeapMotionController/Content/LM_TestTexture.uasset
+[2016.03.01-10.50.38:048][143]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.37:726][  0]LogCook:Display: Cooking /Engine/BasicShapes/Cube -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/BasicShapes/Cube.uasset
+[2016.03.01-10.50.38:048][143]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.37:737][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/BasicShapes/Cube.uasset
+[2016.03.01-10.50.38:049][143]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.37:740][  0]LogCook:Display: Cooking /Engine/EngineMaterials/RemoveSurfaceMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/RemoveSurfaceMaterial.uasset
+[2016.03.01-10.50.38:049][143]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.37:756][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/RemoveSurfaceMaterial.uasset
+[2016.03.01-10.50.38:049][143]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.37:760][  0]LogCook:Display: Cooking /Engine/EngineDebugMaterials/DebugMeshMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineDebugMaterials/DebugMeshMaterial.uasset
+[2016.03.01-10.50.38:049][143]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.37:776][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineDebugMaterials/DebugMeshMaterial.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.50.37:779][  0]LogCook:Display: Cooking /Engine/EngineMaterials/M_InvalidLightmapSettings -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/M_InvalidLightmapSettings.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:085][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/M_InvalidLightmapSettings.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:086][  0]LogCook:Display: Cooking /Engine/EngineMaterials/InvalidLightmapSettings -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/InvalidLightmapSettings.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:119][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/InvalidLightmapSettings.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:121][  0]LogCook:Display: Cooking /Engine/EditorMaterials/GizmoMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/GizmoMaterial.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:131][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/GizmoMaterial.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:132][  0]LogCook:Display: Cooking /Engine/EngineMaterials/Good64x64TilingNoiseHighFreq -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:152][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:153][  0]LogCook:Display: Cooking /Engine/EngineMaterials/DefaultBokeh -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultBokeh.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:156][  0]LogTexture:Display: Building textures: DefaultBokeh (RGBA8)
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:157][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultBokeh.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:159][  0]LogCook:Display: Cooking /Engine/EngineMaterials/PreintegratedSkinBRDF -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/PreintegratedSkinBRDF.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:171][  0]LogTexture:Display: Building textures: PreintegratedSkinBRDF (RGBA8)
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:172][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/PreintegratedSkinBRDF.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:174][  0]LogCook:Display: Cooking /Engine/EngineMaterials/MiniFont -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/MiniFont.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:176][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/MiniFont.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:190][  0]LogCook:Display: Cooking /Engine/EngineMaterials/WeightMapPlaceholderTexture -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/WeightMapPlaceholderTexture.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:193][  0]LogTexture:Display: Building textures: WeightMapPlaceholderTexture (RGBA8)
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:193][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/WeightMapPlaceholderTexture.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:195][  0]LogCook:Display: Cooking /Engine/EngineMaterials/DefaultWhiteGrid -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultWhiteGrid.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:222][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultWhiteGrid.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:223][  0]LogCook:Display: Cooking /Engine/EngineMaterials/DefaultPhysicalMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:224][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:225][  0]LogCook:Display: Cooking /Engine/EngineFonts/RobotoTiny -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineFonts/RobotoTiny.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:249][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineFonts/RobotoTiny.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:252][  0]LogCook:Display: Cooking /Engine/EditorResources/BSPVertex -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorResources/BSPVertex.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:285][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorResources/BSPVertex.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:286][  0]LogCook:Display: Cooking /Engine/EngineDebugMaterials/GeomMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineDebugMaterials/GeomMaterial.uasset
+[2016.03.01-10.51.19:383][638]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:292][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineDebugMaterials/GeomMaterial.uasset
+[2016.03.01-10.52.46:491][899]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.51.19:292][  0]LogCook:Display: Cooking /Engine/EngineDebugMaterials/BoneWeightMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineDebugMaterials/BoneWeightMaterial.uasset
+[2016.03.01-10.52.46:491][899]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.46:287][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineDebugMaterials/BoneWeightMaterial.uasset
+[2016.03.01-10.52.46:491][899]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.46:291][  0]LogCook:Display: Cooking /Engine/EngineDebugMaterials/HeatmapGradient -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineDebugMaterials/HeatmapGradient.uasset
+[2016.03.01-10.52.46:491][899]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.46:300][  0]LogTexture:Display: Building textures: HeatmapGradient (RGBA8)
+[2016.03.01-10.52.46:491][899]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.46:302][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineDebugMaterials/HeatmapGradient.uasset
+[2016.03.01-10.52.57:487][932]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.46:304][  0]LogCook:Display: Cooking /Engine/EditorMaterials/PhAT_JointLimitMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/PhAT_JointLimitMaterial.uasset
+[2016.03.01-10.52.57:487][932]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.57:285][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/PhAT_JointLimitMaterial.uasset
+[2016.03.01-10.52.57:487][932]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.57:288][  0]LogCook:Display: Cooking /Engine/EditorMaterials/PreviewShadowIndicatorMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/PreviewShadowIndicatorMaterial.uasset
+[2016.03.01-10.52.57:487][932]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.57:296][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/PreviewShadowIndicatorMaterial.uasset
+[2016.03.01-10.52.57:487][932]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.57:300][  0]LogCook:Display: Cooking /Engine/EditorMaterials/PreviewShadowIndicator -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/PreviewShadowIndicator.uasset
+[2016.03.01-10.52.57:487][932]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.57:336][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMaterials/PreviewShadowIndicator.uasset
+[2016.03.01-10.52.57:487][932]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.57:339][  0]LogCook:Display: Cooking /Engine/EngineMaterials/EditorBrushMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/EditorBrushMaterial.uasset
+[2016.03.01-10.52.57:487][932]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.57:353][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/EditorBrushMaterial.uasset
+[2016.03.01-10.52.57:487][932]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.57:356][  0]LogCook:Display: Cooking /Engine/EditorMeshes/ColorCalibrator/SM_ColorCalibrator -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/SM_ColorCalibrator.uasset
+[2016.03.01-10.52.57:487][932]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.57:380][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/SM_ColorCalibrator.uasset
+[2016.03.01-10.56.21:372][419]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.52.57:383][  0]LogCook:Display: Cooking /Engine/EditorMeshes/ColorCalibrator/M_ChromeBall -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/M_ChromeBall.uasset
+[2016.03.01-10.56.21:374][419]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.56.21:372][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/M_ChromeBall.uasset
+[2016.03.01-10.56.21:414][420]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.56.21:372][  0]LogCook:Display: Cooking /Engine/EditorMeshes/ColorCalibrator/M_ClearCoat -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/M_ClearCoat.uasset
+[2016.03.01-10.56.21:419][420]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.56.21:413][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/M_ClearCoat.uasset
+[2016.03.01-10.56.21:454][421]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.56.21:414][  0]LogCook:Display: Cooking /Engine/EditorMeshes/ColorCalibrator/M_ClearCoatBlack -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/M_ClearCoatBlack.uasset
+[2016.03.01-10.56.21:455][421]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.56.21:453][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/M_ClearCoatBlack.uasset
+[2016.03.01-10.56.21:508][423]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.56.21:454][  0]LogCook:Display: Cooking /Engine/EditorMeshes/ColorCalibrator/M_ColorGrid -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/M_ColorGrid.uasset
+[2016.03.01-10.56.21:509][423]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.56.21:500][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/M_ColorGrid.uasset
+[2016.03.01-10.56.21:522][423]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.56.21:504][  0]LogCook:Display: Cooking /Engine/EditorMeshes/ColorCalibrator/T_ColorGrid -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/T_ColorGrid.uasset
+[2016.03.01-10.56.21:523][423]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.56.21:521][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/T_ColorGrid.uasset
+[2016.03.01-10.57.30:487][245]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.56.21:522][  0]LogCook:Display: Cooking /Engine/EditorMeshes/ColorCalibrator/M_GreyBall -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/M_GreyBall.uasset
+[2016.03.01-10.57.30:512][246]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:486][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/ColorCalibrator/M_GreyBall.uasset
+[2016.03.01-10.57.30:519][246]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:510][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/icon_Editor_Preferences_General_40x -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/icon_Editor_Preferences_General_40x.uasset
+[2016.03.01-10.57.30:522][246]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:517][  0]LogTexture:Display: Building textures: icon_Editor_Preferences_General_40x (RGBA8)
+[2016.03.01-10.57.30:548][247]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:519][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/icon_Editor_Preferences_General_40x.uasset
+[2016.03.01-10.57.30:551][247]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:524][  0]LogCook:Display: Cooking /Engine/Tutorial/Paper2D/TutorialAssets/Paper2DSprite_TutorialIcon -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Paper2D/TutorialAssets/Paper2DSprite_TutorialIcon.uasset
+[2016.03.01-10.57.30:552][247]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:536][  0]LogTexture:Display: Building textures: Paper2DSprite_TutorialIcon (RGBA8)
+[2016.03.01-10.57.30:554][247]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:538][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Paper2D/TutorialAssets/Paper2DSprite_TutorialIcon.uasset
+[2016.03.01-10.57.30:555][247]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:547][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/icon_ShowSkeletalMeshes_40x -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/icon_ShowSkeletalMeshes_40x.uasset
+[2016.03.01-10.57.30:626][249]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:552][  0]LogTexture:Display: Building textures: icon_ShowSkeletalMeshes_40x (RGBA8)
+[2016.03.01-10.57.30:663][250]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:623][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/icon_ShowSkeletalMeshes_40x.uasset
+[2016.03.01-10.57.30:669][250]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:649][  0]LogCook:Display: Cooking /Engine/Tutorial/Foliage/TutorialAssets/Foliage -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Foliage/TutorialAssets/Foliage.uasset
+[2016.03.01-10.57.30:669][250]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:656][  0]LogTexture:Display: Building textures: Foliage (RGBA8)
+[2016.03.01-10.57.30:669][250]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:658][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Foliage/TutorialAssets/Foliage.uasset
+[2016.03.01-10.57.30:693][251]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:660][  0]LogCook:Display: Cooking /Engine/Tutorial/BlueprintTutorials/BlueprintMacroLibrariesEditorOverview -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/BlueprintMacroLibrariesEditorOverview.uasset
+[2016.03.01-10.57.30:695][251]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:675][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/BlueprintMacroLibrariesEditorOverview.uasset
+[2016.03.01-10.57.30:705][251]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:692][  0]LogCook:Display: Cooking /Engine/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintMacroLibrary_64x -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintMacroLibrary_64x.uasset
+[2016.03.01-10.57.30:747][252]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:701][  0]LogTexture:Display: Building textures: BlueprintMacroLibrary_64x (RGBA8)
+[2016.03.01-10.57.30:770][253]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:704][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintMacroLibrary_64x.uasset
+[2016.03.01-10.57.30:784][253]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:711][  0]LogCook:Display: Cooking /Engine/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_MacroLib -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_MacroLib.uasset
+[2016.03.01-10.57.30:785][253]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:780][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_MacroLib.uasset
+[2016.03.01-10.57.30:820][254]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:784][  0]LogCook:Display: Cooking /Engine/Tutorial/BlueprintTutorials/BlueprintInterfacesEditorOverview -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/BlueprintInterfacesEditorOverview.uasset
+[2016.03.01-10.57.30:842][255]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:817][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/BlueprintInterfacesEditorOverview.uasset
+[2016.03.01-10.57.30:845][255]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:830][  0]LogTexture:Display: Building textures: BlueprintInterface_64x (RGBA8)
+[2016.03.01-10.57.30:846][255]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:831][  0]LogCook:Display: Cooking /Engine/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintInterface_64x -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintInterface_64x.uasset
+[2016.03.01-10.57.30:849][255]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:843][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintInterface_64x.uasset
+[2016.03.01-10.57.30:895][256]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:847][  0]LogCook:Display: Cooking /Engine/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_Interface -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_Interface.uasset
+[2016.03.01-10.57.30:896][256]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:857][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_Interface.uasset
+[2016.03.01-10.57.30:896][256]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:860][  0]LogCook:Display: Cooking /Engine/Tutorial/BlueprintTutorials/LevelBlueprintEditorOverview -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/LevelBlueprintEditorOverview.uasset
+[2016.03.01-10.57.30:896][256]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:883][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/LevelBlueprintEditorOverview.uasset
+[2016.03.01-10.57.30:920][257]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:885][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/DestructibleMeshEditorTutorial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/DestructibleMeshEditorTutorial.uasset
+[2016.03.01-10.57.30:920][257]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:909][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/DestructibleMeshEditorTutorial.uasset
+[2016.03.01-10.57.31:035][260]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.30:912][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/Tutorial_DM -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Tutorial_DM.uasset
+[2016.03.01-10.57.31:038][260]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.31:032][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Tutorial_DM.uasset
+[2016.03.01-10.57.31:067][261]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.31:035][  0]LogCook:Display: Cooking /Engine/EditorMeshes/EditorCube -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/EditorCube.uasset
+[2016.03.01-10.57.31:068][261]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.31:044][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorMeshes/EditorCube.uasset
+[2016.03.01-10.57.31:144][263]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.31:058][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/MaterialEditorTutorial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/MaterialEditorTutorial.uasset
+[2016.03.01-10.57.31:186][264]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.31:105][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/MaterialEditorTutorial.uasset
+[2016.03.01-10.57.58:560][989]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.31:145][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/TutorialMaterial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/TutorialMaterial.uasset
+[2016.03.01-10.57.58:560][989]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.58:550][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/TutorialMaterial.uasset
+[2016.03.01-10.57.58:562][989]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.58:557][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/ParticleSystemEditorTutorial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/ParticleSystemEditorTutorial.uasset
+[2016.03.01-10.57.58:563][989]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.58:561][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/ParticleSystemEditorTutorial.uasset
+[2016.03.01-10.57.58:642][991]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.58:562][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/TutorialParticleSystem -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/TutorialParticleSystem.uasset
+[2016.03.01-10.57.58:642][991]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.58:624][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/TutorialParticleSystem.uasset
+[2016.03.01-10.58.07:306][219]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.57.58:638][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/M_smoke_subUV_blackbody -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/M_smoke_subUV_blackbody.uasset
+[2016.03.01-10.58.07:335][220]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:304][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/M_smoke_subUV_blackbody.uasset
+[2016.03.01-10.58.07:489][224]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:325][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/T_SmokeSubUV_8X8 -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/T_SmokeSubUV_8X8.uasset
+[2016.03.01-10.58.07:489][224]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:482][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/T_SmokeSubUV_8X8.uasset
+[2016.03.01-10.58.07:586][226]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:485][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/T_soft_smoke -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/T_soft_smoke.uasset
+[2016.03.01-10.58.07:586][226]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:556][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/T_soft_smoke.uasset
+[2016.03.01-10.58.07:586][226]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:558][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/PersonaAnimEditorWalkThrough -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/PersonaAnimEditorWalkThrough.uasset
+[2016.03.01-10.58.07:612][227]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:570][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/PersonaAnimEditorWalkThrough.uasset
+[2016.03.01-10.58.07:613][227]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:572][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/Character/NewBlendSpace1D -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/NewBlendSpace1D.uasset
+[2016.03.01-10.58.07:613][227]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:580][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/NewBlendSpace1D.uasset
+[2016.03.01-10.58.07:639][228]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:582][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/Character/Tutorial_Idle -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/Tutorial_Idle.uasset
+[2016.03.01-10.58.07:644][228]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:613][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/Tutorial_Idle.uasset
+[2016.03.01-10.58.07:644][228]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:617][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_Skeleton -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_Skeleton.uasset
+[2016.03.01-10.58.07:644][228]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:623][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_Skeleton.uasset
+[2016.03.01-10.58.07:644][228]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:628][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/Character/Tutorial_Walk_Fwd -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/Tutorial_Walk_Fwd.uasset
+[2016.03.01-10.58.07:650][228]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:642][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/Tutorial_Walk_Fwd.uasset
+[2016.03.01-10.58.07:680][229]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:645][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP.uasset
+[2016.03.01-10.58.07:682][229]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:666][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP.uasset
+[2016.03.01-10.59.07:552][814]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.58.07:669][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_Mat -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_Mat.uasset
+[2016.03.01-10.59.07:553][814]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:551][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_Mat.uasset
+[2016.03.01-10.59.07:559][814]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:552][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_PhysicsAsset -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_PhysicsAsset.uasset
+[2016.03.01-10.59.07:560][814]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:558][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_PhysicsAsset.uasset
+[2016.03.01-10.59.07:564][814]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:559][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/PersonaAnimBlueprintEditorWalkthrough -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/PersonaAnimBlueprintEditorWalkthrough.uasset
+[2016.03.01-10.59.07:565][814]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:563][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/PersonaAnimBlueprintEditorWalkthrough.uasset
+[2016.03.01-10.59.07:580][815]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:564][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_AnimBlueprint -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_AnimBlueprint.uasset
+[2016.03.01-10.59.07:581][815]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:579][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP_AnimBlueprint.uasset
+[2016.03.01-10.59.07:740][819]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:580][  0]LogCook:Display: Cooking /Engine/EditorBlueprintResources/StandardMacros -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorBlueprintResources/StandardMacros.uasset
+[2016.03.01-10.59.07:740][819]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:738][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorBlueprintResources/StandardMacros.uasset
+[2016.03.01-10.59.07:758][819]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:740][  0]LogCook:Display: Cooking /Engine/Tutorial/SubEditors/TutorialAssets/Character/TutorialCharacter -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialCharacter.uasset
+[2016.03.01-10.59.07:767][820]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:757][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/TutorialCharacter.uasset
+[2016.03.01-10.59.07:767][820]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:758][  0]LogCook:Display: Cooking /Engine/Tutorial/Paper2D/SpriteEditorTutorial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Paper2D/SpriteEditorTutorial.uasset
+[2016.03.01-10.59.07:767][820]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:762][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Paper2D/SpriteEditorTutorial.uasset
+[2016.03.01-10.59.07:777][820]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:764][  0]LogCook:Display: Cooking /Engine/Tutorial/Paper2D/FlipbookEditorTutorial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Paper2D/FlipbookEditorTutorial.uasset
+[2016.03.01-10.59.07:778][820]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:776][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Paper2D/FlipbookEditorTutorial.uasset
+[2016.03.01-10.59.07:780][820]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:777][  0]LogCook:Display: Cooking /Engine/Tutorial/Paper2D/TutorialAssets/Paper2DFlipbook_TutorialIcon -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Paper2D/TutorialAssets/Paper2DFlipbook_TutorialIcon.uasset
+[2016.03.01-10.59.07:781][820]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:779][  0]LogTexture:Display: Building textures: Paper2DFlipbook_TutorialIcon (RGBA8)
+[2016.03.01-10.59.07:782][820]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:780][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Paper2D/TutorialAssets/Paper2DFlipbook_TutorialIcon.uasset
+[2016.03.01-10.59.07:785][820]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:781][  0]LogCook:Display: Cooking /Engine/Tutorial/Foliage/Foliage_Intro_Tutorial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Foliage/Foliage_Intro_Tutorial.uasset
+[2016.03.01-10.59.07:786][820]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:785][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Foliage/Foliage_Intro_Tutorial.uasset
+[2016.03.01-10.59.07:790][820]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:786][  0]LogCook:Display: Cooking /Engine/Tutorial/Foliage/Foliage_Using_The_Tool_Tutorial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Foliage/Foliage_Using_The_Tool_Tutorial.uasset
+[2016.03.01-10.59.07:791][820]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:789][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Foliage/Foliage_Using_The_Tool_Tutorial.uasset
+[2016.03.01-10.59.07:802][821]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:790][  0]LogCook:Display: Cooking /Engine/Tutorial/Foliage/Foliage_Settings_Tutorial -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Foliage/Foliage_Settings_Tutorial.uasset
+[2016.03.01-10.59.07:802][821]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:795][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Foliage/Foliage_Settings_Tutorial.uasset
+[2016.03.01-10.59.07:815][821]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:797][  0]LogCook:Display: Cooking /Engine/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_Class -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_Class.uasset
+[2016.03.01-10.59.07:816][821]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:814][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_Class.uasset
+[2016.03.01-10.59.07:845][822]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:815][  0]LogCook:Display: Cooking /Engine/EditorBlueprintResources/ActorMacros -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorBlueprintResources/ActorMacros.uasset
+[2016.03.01-10.59.07:845][822]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:837][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EditorBlueprintResources/ActorMacros.uasset
+[2016.03.01-10.59.07:845][822]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:840][  0]LogCook:Display: Cooking /Engine/EngineMeshes/Cube -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMeshes/Cube.uasset
+[2016.03.01-10.59.07:846][822]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:844][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMeshes/Cube.uasset
+[2016.03.01-10.59.07:850][822]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:845][  0]LogCook:Display: Cooking /Engine/Tutorial/Landscape/Landscape_Sculpt_Mode -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Landscape/Landscape_Sculpt_Mode.uasset
+[2016.03.01-10.59.07:851][822]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:849][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Landscape/Landscape_Sculpt_Mode.uasset
+[2016.03.01-10.59.07:855][822]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:850][  0]LogCook:Display: Cooking /Engine/Tutorial/Landscape/Landscape_Painting_Mode -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Landscape/Landscape_Painting_Mode.uasset
+[2016.03.01-10.59.07:856][822]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:854][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Tutorial/Landscape/Landscape_Painting_Mode.uasset
+[2016.03.01-10.59.08:147][832]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.07:855][  0]LogCookCommandlet:Display: GC...
+[2016.03.01-10.59.08:147][832]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:131][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/T_Castle_ThumbstickOutter -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/T_Castle_ThumbstickOutter.uasset
+[2016.03.01-10.59.08:170][833]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:139][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/T_Castle_ThumbstickOutter.uasset
+[2016.03.01-10.59.08:171][833]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:151][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/MobileHUDDirectionPad2 -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDDirectionPad2.uasset
+[2016.03.01-10.59.08:171][833]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:158][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDDirectionPad2.uasset
+[2016.03.01-10.59.08:194][834]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:165][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/MobileHUDButton2_on -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDButton2_on.uasset
+[2016.03.01-10.59.08:238][836]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:185][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDButton2_on.uasset
+[2016.03.01-10.59.08:261][837]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:231][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/MobileHUDButton1_off -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDButton1_off.uasset
+[2016.03.01-10.59.08:284][838]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:244][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDButton1_off.uasset
+[2016.03.01-10.59.08:284][838]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:272][  0]LogTexture:Display: Building textures: T_Castle_ThumbstickInner (RGBA8)
+[2016.03.01-10.59.08:305][839]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:274][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/T_Castle_ThumbstickInner -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/T_Castle_ThumbstickInner.uasset
+[2016.03.01-10.59.08:328][840]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:287][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/T_Castle_ThumbstickInner.uasset
+[2016.03.01-10.59.08:328][840]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:298][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/MobileHUDButtonFire -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDButtonFire.uasset
+[2016.03.01-10.59.08:352][841]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:309][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDButtonFire.uasset
+[2016.03.01-10.59.08:375][842]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:345][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/MobileHUDButton2_off -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDButton2_off.uasset
+[2016.03.01-10.59.08:399][843]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:355][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDButton2_off.uasset
+[2016.03.01-10.59.08:399][843]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:370][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/VirtualJoystick_Background -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset
+[2016.03.01-10.59.08:399][843]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:379][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset
+[2016.03.01-10.59.08:399][843]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:387][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/AnalogHat -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/AnalogHat.uasset
+[2016.03.01-10.59.08:420][844]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:394][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/AnalogHat.uasset
+[2016.03.01-10.59.08:421][844]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:409][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/MobileHUDDirectionStick -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDDirectionStick.uasset
+[2016.03.01-10.59.08:447][845]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:415][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDDirectionStick.uasset
+[2016.03.01-10.59.08:447][845]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:428][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/MobileHUDButton3 -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDButton3.uasset
+[2016.03.01-10.59.08:471][846]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:437][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDButton3.uasset
+[2016.03.01-10.59.08:471][846]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:448][  0]LogCook:Display: Marking ../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset as reloading for cooker because it's been cooked for platforms HTML5.
+[2016.03.01-10.59.08:471][846]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:454][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/DefaultVirtualJoysticks -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset
+[2016.03.01-10.59.08:542][849]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:461][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset
+[2016.03.01-10.59.08:543][849]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:520][  0]LogCook:Display: Cooking /Engine/MobileResources/T_MobileMenu2 -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/T_MobileMenu2.uasset
+[2016.03.01-10.59.08:714][855]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:528][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/T_MobileMenu2.uasset
+[2016.03.01-10.59.08:791][857]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:702][  0]LogCook:Display: Cooking /Engine/Maps/Entry -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Maps/Entry.umap
+[2016.03.01-10.59.09:022][863]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.08:782][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/Maps/Entry.umap
+[2016.03.01-10.59.19:437][153]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.09:019][  0]LogCook:Display: Cooking /Engine/EngineMaterials/DefaultNormal -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultNormal.uasset
+[2016.03.01-10.59.19:439][153]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:436][  0]LogTexture:Display: Building textures: DefaultNormal (DXT5)
+[2016.03.01-10.59.19:550][156]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:438][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/EngineMaterials/DefaultNormal.uasset
+[2016.03.01-10.59.19:552][156]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:549][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/MobileHUDDirectionPad3 -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDDirectionPad3.uasset
+[2016.03.01-10.59.19:554][156]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:550][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDDirectionPad3.uasset
+[2016.03.01-10.59.19:556][156]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:553][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/LeftVirtualJoystickOnly -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/LeftVirtualJoystickOnly.uasset
+[2016.03.01-10.59.19:565][157]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:555][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/LeftVirtualJoystickOnly.uasset
+[2016.03.01-10.59.19:565][157]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:559][  0]LogCook:Display: Cooking /Engine/MobileResources/T_MobileControls_texture -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/T_MobileControls_texture.uasset
+[2016.03.01-10.59.19:565][157]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:561][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/T_MobileControls_texture.uasset
+[2016.03.01-10.59.19:566][157]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:563][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/MobileHUDButton1_on -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDButton1_on.uasset
+[2016.03.01-10.59.19:610][158]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:565][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDButton1_on.uasset
+[2016.03.01-10.59.19:613][158]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:610][  0]LogCook:Display: Cooking /Engine/MobileResources/HUD/MobileHUDDirectionPad -> D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDDirectionPad.uasset
+[2016.03.01-10.59.19:750][162]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:612][  0]LogSavePackage:Display: Finished SavePackage D:/Inssiders/inssiders/Inssiders/Saved/Cooked/HTML5/Engine/Content/MobileResources/HUD/MobileHUDDirectionPad.uasset
+[2016.03.01-10.59.19:752][162]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:745][  0]LogChunkManifestGenerator:Display: Saving asset registry.
+[2016.03.01-10.59.19:758][162]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:751][  0]LogChunkManifestGenerator:Display: Generated asset registry num assets 178, size is 95.80kb
+[2016.03.01-10.59.19:879][165]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:757][  0]LogChunkManifestGenerator:Display: Done saving asset registry.
+[2016.03.01-10.59.19:879][165]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:877][  0]LogCook:Display: Cook by the book total time in tick 843.646912s total time 862.351135
+[2016.03.01-10.59.19:879][165]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:878][  0]LogInit:Display: 
+[2016.03.01-10.59.19:879][165]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:878][  0]LogInit:Display: Warning/Error Summary
+[2016.03.01-10.59.19:896][166]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:878][  0]LogInit:Display: ---------------------
+[2016.03.01-10.59.19:896][166]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:895][  0]LogInit:Display: LogMaterial:Warning: Failed to compile Material /Engine/EditorMaterials/PreviewShadowIndicatorMaterial.PreviewShadowIndicatorMaterial for platform GLSL_ES2_WEBGL, Default Material will be used in game.
+[2016.03.01-10.59.19:898][166]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:896][  0]LogInit:Display: LogMaterial:Warning: 	(Node TextureSample) Node not supported in feature level ES2
+[2016.03.01-10.59.19:898][166]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:896][  0]LogInit:Display: 
+[2016.03.01-10.59.19:898][166]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:897][  0]LogInit:Display: Success - 0 error(s), 2 warning(s)
+[2016.03.01-10.59.19:898][166]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: [2016.03.01-10.59.19:897][  0]LogInit:Display: 
+[2016.03.01-10.59.19:898][166]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: 
+[2016.03.01-10.59.23:899][273]MainFrameActions: Packaging (HTML5): UE4Editor-Cmd: Execution of commandlet took:  865.37 seconds
+[2016.03.01-10.59.23:900][273]MainFrameActions: Packaging (HTML5): CommandUtils.Run: Run: Took 1273,4708271s to run UE4Editor-Cmd.exe, ExitCode=0
+[2016.03.01-10.59.23:925][274]MainFrameActions: Packaging (HTML5): Project.Cook: ********** COOK COMMAND COMPLETED **********
+[2016.03.01-10.59.23:992][276]MainFrameActions: Packaging (HTML5): Project.CopyBuildToStagingDirectory: ********** STAGE COMMAND STARTED **********
+[2016.03.01-10.59.24:334][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: Deployment Context **************
+[2016.03.01-10.59.24:334][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: ArchiveDirectory = D:\Inssiders\HTML5
+[2016.03.01-10.59.24:334][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: RawProjectPath = D:\Inssiders\inssiders\Inssiders\Inssiders.uproject
+[2016.03.01-10.59.24:334][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: IsCodeBasedUprojectFile = False
+[2016.03.01-10.59.24:334][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: DedicatedServer = False
+[2016.03.01-10.59.24:334][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: Stage = True
+[2016.03.01-10.59.24:334][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: StageTargetPlatform = HTML5
+[2016.03.01-10.59.24:334][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: LocalRoot = C:\Program Files (x86)\Epic Games\4.10
+[2016.03.01-10.59.24:334][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: ProjectRoot = D:\Inssiders\inssiders\Inssiders
+[2016.03.01-10.59.24:334][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: PlatformDir = HTML5
+[2016.03.01-10.59.24:334][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: StageProjectRoot = D:\Inssiders\inssiders\Inssiders\Saved\StagedBuilds\HTML5\Inssiders
+[2016.03.01-10.59.24:334][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: ShortProjectName = Inssiders
+[2016.03.01-10.59.24:336][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: StageDirectory = D:\Inssiders\inssiders\Inssiders\Saved\StagedBuilds\HTML5
+[2016.03.01-10.59.24:336][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: SourceRelativeProjectRoot = Inssiders
+[2016.03.01-10.59.24:336][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: RelativeProjectRootForStage = Inssiders
+[2016.03.01-10.59.24:336][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: RelativeProjectRootForUnrealPak = Inssiders
+[2016.03.01-10.59.24:336][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: ProjectArgForCommandLines = ../../../Inssiders/Inssiders.uproject
+[2016.03.01-10.59.24:336][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: RuntimeRootDir = D:\Inssiders\inssiders\Inssiders\Saved\StagedBuilds\HTML5
+[2016.03.01-10.59.24:336][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: RuntimeProjectRootDir = D:\Inssiders\inssiders\Inssiders\Saved\StagedBuilds\HTML5\Inssiders
+[2016.03.01-10.59.24:336][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: UProjectCommandLineArgInternalRoot = ../../../
+[2016.03.01-10.59.24:336][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: PakFileInternalRoot = ../../../
+[2016.03.01-10.59.24:336][285]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: UnrealFileServerInternalRoot = ../../../
+[2016.03.01-10.59.24:336][285]MainFrameActions: Packaging (HTML5): Project.CreateDeploymentContext: End Deployment Context **************
+[2016.03.01-10.59.26:387][340]MainFrameActions: Packaging (HTML5): Project.CreatePakUsingStagingManifest: Creating pak using staging manifest.
+[2016.03.01-10.59.26:450][342]MainFrameActions: Packaging (HTML5): Project.RunUnrealPak: Running UnrealPak *******
+[2016.03.01-10.59.26:452][342]MainFrameActions: Packaging (HTML5): CommandUtils.Run: Run: C:\Program Files (x86)\Epic Games\4.10\Engine\Binaries\Win64\UnrealPak.exe D:\Inssiders\inssiders\Inssiders\Saved\StagedBuilds\HTML5\Inssiders\Content\Paks\Inssiders-HTML5.pak -create="C:\Users\Игорь\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+(x86)+Epic+Games+4.10\PakList_Inssiders-HTML5.txt" -installed -order=D:\Inssiders\inssiders\Inssiders\Build\HTML5\FileOpenOrder\CookerOpenOrder.log -UTF8Output -compress
+[2016.03.01-10.59.27:397][367]MainFrameActions: Packaging (HTML5): UnrealPak: LogPakFile:Display: Loading response file C:\Users\Игорь\AppData\Roaming\Unreal Engine\AutomationTool\Logs\C+Program+Files+(x86)+Epic+Games+4.10\PakList_Inssiders-HTML5.txt
+[2016.03.01-10.59.27:421][368]MainFrameActions: Packaging (HTML5): UnrealPak: LogPakFile:Display: Added 972 entries to add to pak file.
+[2016.03.01-10.59.27:421][368]MainFrameActions: Packaging (HTML5): UnrealPak: LogPakFile:Display: Loading pak order file D:\Inssiders\inssiders\Inssiders\Build\HTML5\FileOpenOrder\CookerOpenOrder.log...
+[2016.03.01-10.59.27:422][368]MainFrameActions: Packaging (HTML5): UnrealPak: LogPakFile:Display: Finished loading pak order file D:\Inssiders\inssiders\Inssiders\Build\HTML5\FileOpenOrder\CookerOpenOrder.log.
+[2016.03.01-10.59.27:423][368]MainFrameActions: Packaging (HTML5): UnrealPak: LogPakFile:Display: Collecting files to add to pak file...
+[2016.03.01-10.59.27:450][369]MainFrameActions: Packaging (HTML5): UnrealPak: LogPakFile:Display: Collected 972 files in 0.03s.
+[2016.03.01-10.59.33:069][520]MainFrameActions: Packaging (HTML5): UnrealPak: LogPakFile:Display: Added 972 files, 14099907 bytes total, time 5.62s.
+[2016.03.01-10.59.33:082][520]MainFrameActions: Packaging (HTML5): CommandUtils.Run: Run: Took 6,6303214s to run UnrealPak.exe, ExitCode=0
+[2016.03.01-10.59.33:085][520]MainFrameActions: Packaging (HTML5): Project.CreatePak: UnrealPak Done *******
+[2016.03.01-10.59.33:253][525]MainFrameActions: Packaging (HTML5): Project.CopyBuildToStagingDirectory: ********** STAGE COMMAND COMPLETED **********
+[2016.03.01-10.59.33:282][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: Deployment Context **************
+[2016.03.01-10.59.33:282][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: ArchiveDirectory = D:\Inssiders\HTML5
+[2016.03.01-10.59.33:282][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: RawProjectPath = D:\Inssiders\inssiders\Inssiders\Inssiders.uproject
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: IsCodeBasedUprojectFile = False
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: DedicatedServer = False
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: Stage = True
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: StageTargetPlatform = HTML5
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: LocalRoot = C:\Program Files (x86)\Epic Games\4.10
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: ProjectRoot = D:\Inssiders\inssiders\Inssiders
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: PlatformDir = HTML5
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: StageProjectRoot = D:\Inssiders\inssiders\Inssiders\Saved\StagedBuilds\HTML5\Inssiders
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: ShortProjectName = Inssiders
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: StageDirectory = D:\Inssiders\inssiders\Inssiders\Saved\StagedBuilds\HTML5
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: SourceRelativeProjectRoot = Inssiders
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: RelativeProjectRootForStage = Inssiders
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: RelativeProjectRootForUnrealPak = Inssiders
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: ProjectArgForCommandLines = ../../../Inssiders/Inssiders.uproject
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: RuntimeRootDir = D:\Inssiders\inssiders\Inssiders\Saved\StagedBuilds\HTML5
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: RuntimeProjectRootDir = D:\Inssiders\inssiders\Inssiders\Saved\StagedBuilds\HTML5\Inssiders
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: UProjectCommandLineArgInternalRoot = ../../../
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: PakFileInternalRoot = ../../../
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: UnrealFileServerInternalRoot = ../../../
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.CreateDeploymentContext: End Deployment Context **************
+[2016.03.01-10.59.33:283][526]MainFrameActions: Packaging (HTML5): Project.Package: ********** PACKAGE COMMAND STARTED **********
+[2016.03.01-10.59.33:465][531]MainFrameActions: Packaging (HTML5): HTML5Platform.Package: Package D:\Inssiders\inssiders\Inssiders\Inssiders.uproject
+[2016.03.01-10.59.33:466][531]MainFrameActions: Packaging (HTML5): HTML5Platform.Package: Setting Emscripten SDK for packaging..
+[2016.03.01-10.59.33:551][533]MainFrameActions: Packaging (HTML5): CommandUtils.SetEnvVar: SetEnvVar EM_CONFIG=C:\Program Files (x86)\Epic Games\4.10\Engine\Intermediate\Build\HTML5\.emscripten
+[2016.03.01-10.59.33:553][533]MainFrameActions: Packaging (HTML5): CommandUtils.Run: Run: C:\Program Files (x86)\Epic Games\4.10\Engine\Source\ThirdParty\HTML5\emsdk\Win64\python\2.7.5.3_64bit\python.exe "C:\Program Files (x86)\Epic Games\4.10\Engine\Source\ThirdParty\HTML5\emsdk\emscripten\1.30.0\tools\file_packager.py" "D:\Inssiders\inssiders\Inssiders\Binaries\HTML5\Inssiders.data" --preload . --js-output="D:\Inssiders\inssiders\Inssiders\Binaries\HTML5\Inssiders.data.js"
+[2016.03.01-10.59.36:051][600]MainFrameActions: Packaging (HTML5): CommandUtils.Run: Run: Took 2,4982186s to run python.exe, ExitCode=0
+[2016.03.01-10.59.36:052][600]MainFrameActions: Packaging (HTML5): CommandUtils.SetEnvVar: SetEnvVar EM_CONFIG=
+[2016.03.01-10.59.37:075][628]MainFrameActions: Packaging (HTML5): HTML5Platform.Package: Setting Heap size to 1024 Mb 
+[2016.03.01-10.59.38:192][658]MainFrameActions: Packaging (HTML5): HTML5Platform.CompressFile:  Compressing D:\Inssiders\inssiders\Inssiders\Binaries\HTML5\UE4Game.js.mem
+[2016.03.01-10.59.38:192][658]MainFrameActions: Packaging (HTML5): HTML5Platform.CompressFile:  Compressing D:\Inssiders\inssiders\Inssiders\Binaries\HTML5\UE4Game.js
+[2016.03.01-10.59.38:192][658]MainFrameActions: Packaging (HTML5): HTML5Platform.CompressFile:  Compressing D:\Inssiders\inssiders\Inssiders\Binaries\HTML5\UE4Game.js.symbols
+[2016.03.01-10.59.38:192][658]MainFrameActions: Packaging (HTML5): HTML5Platform.CompressFile:  Compressing D:\Inssiders\inssiders\Inssiders\Binaries\HTML5\Inssiders.data
+[2016.03.01-10.59.38:192][658]MainFrameActions: Packaging (HTML5): HTML5Platform.CompressFile:  Compressing D:\Inssiders\inssiders\Inssiders\Binaries\HTML5/Utility.js
+[2016.03.01-10.59.38:193][658]MainFrameActions: Packaging (HTML5): HTML5Platform.CompressFile:  Compressing D:\Inssiders\inssiders\Inssiders\Binaries\HTML5\Inssiders.data.js
+[2016.03.01-11.00.06:634][418]MainFrameActions: Packaging (HTML5): CommandUtils.PrintRunTime: Run: Total 1273s to run UE4Editor-Cmd.exe
+[2016.03.01-11.00.06:634][418]MainFrameActions: Packaging (HTML5): CommandUtils.PrintRunTime: Run: Total 6s to run UnrealPak.exe
+[2016.03.01-11.00.06:634][418]MainFrameActions: Packaging (HTML5): CommandUtils.PrintRunTime: Run: Total 2s to run python.exe
+[2016.03.01-11.00.06:634][418]MainFrameActions: Packaging (HTML5): Project.Package: ********** PACKAGE COMMAND COMPLETED **********
+[2016.03.01-11.00.06:636][418]MainFrameActions: Packaging (HTML5): Project.Archive: ********** ARCHIVE COMMAND STARTED **********
+[2016.03.01-11.00.06:666][419]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: Deployment Context **************
+[2016.03.01-11.00.06:666][419]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: ArchiveDirectory = D:\Inssiders\HTML5
+[2016.03.01-11.00.06:667][419]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: RawProjectPath = D:\Inssiders\inssiders\Inssiders\Inssiders.uproject
+[2016.03.01-11.00.06:667][419]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: IsCodeBasedUprojectFile = False
+[2016.03.01-11.00.06:667][419]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: DedicatedServer = False
+[2016.03.01-11.00.06:667][419]MainFrameActions: Packaging (HTML5): Project.LogDeploymentContext: Stage = True
+[2016.03.01-11.00.06:667][419]MainFrameActions: Packaging (HTML5): Project.LogDepl
